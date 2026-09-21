@@ -8,10 +8,13 @@ import { SearchFlow } from "@features/search/components/SearchFlow";
 import { FavoritosQuickList } from "@features/favorites/components/FavoritosQuickList";
 import { SponsorSlot } from "@features/sponsors/components/SponsorSlot";
 import { AdSenseRail } from "@shared/ads/AdSenseUnit";
+import { shouldRenderConsultarPageRail } from "@shared/ads/placement";
 import { PageShell } from "@shared/layout/PageShell";
 import { PageHeader } from "@shared/layout/PageHeader";
 import { Footer } from "@shared/layout/Footer";
 import { IconLocation } from "@shared/icons/IconLocation";
+import { useIsDesktop } from "@shared/hooks/useIsDesktop";
+import { useSearchFlowStore } from "@features/search/store/useSearchFlowStore";
 import { ConsultarMapPane } from "./ConsultarMapPane";
 
 /** Una sola unidad en el DOM (mobile + desktop). Vacío = no se muestra. */
@@ -26,6 +29,13 @@ const IconRoute = () => (
 );
 
 export function ConsultarClient({ children }: { children?: ReactNode }) {
+  const isConsulting = useSearchFlowStore((s) => s.isConsulting);
+  const isDesktop = useIsDesktop();
+  const showConsultarRail = shouldRenderConsultarPageRail({
+    isConsulting,
+    isDesktop,
+  });
+
   return (
     <PageShell fluid>
       {children}
@@ -62,10 +72,17 @@ export function ConsultarClient({ children }: { children?: ReactNode }) {
               Cómo llego
             </Link>
           </div>
+          {/* Above-the-fold: visible al aterrizar, no debajo del form de 5 pasos.
+              En mobile se desmonta al consultar (el overlay lo taparía). */}
+          {showConsultarRail ? (
+            <AdSenseRail
+              slot={ADSENSE_SLOT_CONSULTAR}
+              placement="consultar-above-form"
+              className="mt-4 mb-1"
+            />
+          ) : null}
           <SearchFlow loadingArribos={false} />
           <FavoritosQuickList className="mt-6 hidden lg:block" />
-          {/* Una sola unidad AdSense (no duplicar dentro de SponsorSlot). */}
-          <AdSenseRail slot={ADSENSE_SLOT_CONSULTAR} className="mt-6" />
           <div className="hidden lg:block">
             <SponsorSlot />
           </div>

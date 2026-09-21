@@ -15,8 +15,12 @@ import { useSearchFlowData } from "@features/search/context/SearchFlowContext";
 import { useSearchFlowStore } from "@features/search/store/useSearchFlowStore";
 import { useUIStore } from "@shared/ui/store/useUIStore";
 import { AdSenseRail } from "@shared/ads/AdSenseUnit";
+import { resolveAdSenseSlot } from "@shared/ads/placement";
 
-const ADSENSE_SLOT_FAVORITOS = process.env.NEXT_PUBLIC_ADSENSE_SLOT_FAVORITOS?.trim();
+const ADSENSE_SLOT_FAVORITOS = resolveAdSenseSlot(
+  process.env.NEXT_PUBLIC_ADSENSE_SLOT_FAVORITOS,
+  process.env.NEXT_PUBLIC_ADSENSE_SLOT_CONSULTAR,
+);
 
 export function FavoritosClient() {
   const router = useRouter();
@@ -85,6 +89,11 @@ export function FavoritosClient() {
         title="Favoritos"
         subtitle="Paradas guardadas y consultas recientes"
       />
+      <AdSenseRail
+        slot={ADSENSE_SLOT_FAVORITOS}
+        placement="favoritos-above-lists"
+        className="mb-6 mt-0 lg:mb-8"
+      />
       {/* Desktop: favoritos (1/3) e historial (2/3, en dos columnas) */}
       <div className="lg:grid lg:grid-cols-3 lg:items-start lg:gap-8">
         <div>
@@ -102,7 +111,6 @@ export function FavoritosClient() {
             onRename={handleEditFavName}
             onGoToSearch={() => router.push("/consultar")}
           />
-          <AdSenseRail slot={ADSENSE_SLOT_FAVORITOS} className="mt-6 lg:mt-8" />
         </div>
         <div className="lg:col-span-2">
           <HistorialList

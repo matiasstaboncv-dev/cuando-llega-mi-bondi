@@ -11,7 +11,7 @@ import { ThemeProvider } from "@shared/layout/ThemeProvider";
 import { PwaViewportSync } from "@shared/layout/PwaViewportSync";
 import { ToasterDeferred } from "@shared/ui/ToasterDeferred";
 import Script from "next/script";
-import { ADSENSE_CLIENT } from "@shared/ads/AdSenseScript";
+import { ADSENSE_CLIENT, AdSenseScript } from "@shared/ads/AdSenseScript";
 
 // TODO: Cache Components adoption. Refactor this route so this opt-out can be removed.
 // See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
@@ -90,8 +90,9 @@ export const metadata: Metadata = {
         apple: "/apple-icon.png",
         shortcut: "/favicon.ico",
     },
-    // Verificación del sitio en AdSense en todas las páginas; el script de
-    // anuncios solo carga junto a los bloques manuales (ver AdSenseUnit).
+    // Verificación del sitio en AdSense en todas las páginas. El script de
+    // anuncios también va en el layout (ver AdSenseScript) para que el request
+    // arranque antes de hidratar los bloques manuales.
     other: {
         "google-adsense-account": ADSENSE_CLIENT,
     },
@@ -111,6 +112,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     return (
         <html lang="es" suppressHydrationWarning>
             <head>
+                <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
+                <link rel="preconnect" href="https://googleads.g.doubleclick.net" />
+                <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com" />
                 <Script
                     id="sw-registration"
                     strategy="afterInteractive"
@@ -127,6 +131,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 />
             </head>
             <body className={`${inter.variable}`}>
+                <AdSenseScript />
                 <ThemeProvider>
                     <PwaViewportSync />
                     <ThemeColorMeta />

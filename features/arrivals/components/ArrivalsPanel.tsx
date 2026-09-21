@@ -14,13 +14,20 @@ import {
     type ArrivalsDataSession,
     type ArrivalsConsultSession,
 } from "@features/arrivals/types/arrivalsSession";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState, type ReactNode } from "react";
 import { ArrivalsEmpty } from "./ArrivalsEmpty";
 import { ArrivalsLoading } from "./ArrivalsLoading";
 import { LiveSharingBanner } from "./LiveSharingBanner";
 import { AdSenseRail } from "@shared/ads/AdSenseUnit";
+import {
+    resolveAdSenseSlot,
+    shouldMountArrivalsRail,
+} from "@shared/ads/placement";
 
-const ADSENSE_SLOT_ARRIVALS = process.env.NEXT_PUBLIC_ADSENSE_SLOT_ARRIVALS?.trim();
+const ADSENSE_SLOT_ARRIVALS = resolveAdSenseSlot(
+    process.env.NEXT_PUBLIC_ADSENSE_SLOT_ARRIVALS,
+    process.env.NEXT_PUBLIC_ADSENSE_SLOT_CONSULTAR,
+);
 
 interface ArrivalsPanelProps {
     consult: Pick<
@@ -158,6 +165,51 @@ export function ArrivalsPanel({ consult, arrivals }: ArrivalsPanelProps) {
 
     if (view === "hidden") return null;
 
+    const leadArribo = hasArribos ? displayArribos[0] : undefined;
+    const restArribos = hasArribos ? displayArribos.slice(1) : [];
+
+    let leadBlock: ReactNode;
+    switch (view) {
+        case "loading":
+            leadBlock = <ArrivalsLoading />;
+            break;
+        case "empty":
+            leadBlock = (
+                <ArrivalsEmpty
+                    mode={isConsulting ? "no-data" : "prompt"}
+                    errorInfo={isConsulting ? errorInfo : null}
+                    retryAt={retryAt}
+                    loadingArribos={loadingArribos}
+                    selectedRamal={selectedRamal}
+                    onRetry={fetchArribos}
+                    onResetRamal={() => setSelectedRamal("TODOS")}
+                />
+            );
+            break;
+        case "list":
+            leadBlock = (
+                <div className="flex flex-col gap-3">
+                    <LiveSharingBanner count={liveSharings.length} />
+                    {leadArribo ? (
+                        <ArriboCard
+                            key={`${leadArribo.CodigoLineaParada}-${leadArribo.Arribo}-lead`}
+                            arribo={leadArribo}
+                        />
+                    ) : (
+                        <div className="rounded-[10px] border border-success/35 bg-success/10 px-4 py-3 font-mono text-[12px] leading-relaxed text-muted-foreground">
+                            Sin datos de arribos de la municipalidad en este momento. Igual podés ver
+                            ubicaciones compartidas en tiempo real en el mapa.
+                        </div>
+                    )}
+                </div>
+            );
+            break;
+        default: {
+            const _exhaustive: never = view;
+            leadBlock = _exhaustive;
+        }
+    }
+
     return (
         <div className="mt-3">
             <div className="mb-2.5 flex items-center justify-between">
@@ -214,36 +266,28 @@ export function ArrivalsPanel({ consult, arrivals }: ArrivalsPanelProps) {
                 </p>
             ) : null}
 
-            {view === "loading" ? (
-                <ArrivalsLoading />
-            ) : view === "empty" ? (
-                <ArrivalsEmpty
-                    mode={isConsulting ? "no-data" : "prompt"}
-                    errorInfo={isConsulting ? errorInfo : null}
-                    retryAt={retryAt}
-                    loadingArribos={loadingArribos}
-                    selectedRamal={selectedRamal}
-                    onRetry={fetchArribos}
-                    onResetRamal={() => setSelectedRamal("TODOS")}
+            {leadBlock}
+
+            {/* Siempre en el mismo lugar del árbol mientras isConsulting: ni el
+                poll de 25s ni pasar de skeleton → lista remonta el <ins>.
+                Después del primer arribo para que Active View coincida con el resultado. */}
+            {shouldMountArrivalsRail(isConsulting) ? (
+                <AdSenseRail
+                    slot={ADSENSE_SLOT_ARRIVALS}
+                    placement="arrivals-after-lead"
                 />
-            ) : (
-                <div className="flex flex-col gap-3">
-                    <LiveSharingBanner count={liveSharings.length} />
-                    {hasArribos ? (
-                        displayArribos.map((a, i) => (
-                            <ArriboCard
-                                key={`${a.CodigoLineaParada}-${a.Arribo}-${i}`}
-                                arribo={a}
-                            />
-                        ))
-                    ) : (
-                        <div className="rounded-[10px] border border-success/35 bg-success/10 px-4 py-3 font-mono text-[12px] leading-relaxed text-muted-foreground">
-                            Sin datos de arribos de la municipalidad en este momento. Igual podés ver
-                            ubicaciones compartidas en tiempo real en el mapa.
-                        </div>
-                    )}
+            ) : null}
+
+            {view === "list" && restArribos.length > 0 ? (
+                <div className="mt-3 flex flex-col gap-3">
+                    {restArribos.map((a, i) => (
+                        <ArriboCard
+                            key={`${a.CodigoLineaParada}-${a.Arribo}-${i + 1}`}
+                            arribo={a}
+                        />
+                    ))}
                 </div>
-            )}
+            ) : null}
 
             {showOtrasLineas && onSelectOtraLinea ? (
                 <div className="mt-3">
@@ -254,10 +298,6 @@ export function ArrivalsPanel({ consult, arrivals }: ArrivalsPanelProps) {
                     />
                 </div>
             ) : null}
-
-            {/* Montado mientras consultás: NO gates con loadingArribos (el refresh
-                cada 25s desmontaba el bloque y AdSense parpadeaba / quedaba unfilled). */}
-            {isConsulting ? <AdSenseRail slot={ADSENSE_SLOT_ARRIVALS} /> : null}
         </div>
     );
 }

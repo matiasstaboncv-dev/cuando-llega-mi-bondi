@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { cn } from "@shared/utils";
-import { ADSENSE_CLIENT, AdSenseScript } from "./AdSenseScript";
+import { ADSENSE_CLIENT } from "./AdSenseScript";
 
 declare global {
     interface Window {
@@ -11,13 +11,15 @@ declare global {
 }
 
 /**
- * Bloque manual de AdSense. Sin `slot` no renderiza ni carga el script.
+ * Bloque manual de AdSense. Sin `slot` no renderiza. El script vive en el
+ * layout raíz para que el request arranque lo antes posible.
  *
  * - `banner`: 100px fijos (mobile). Sin full-width-responsive para no inflar.
  * - `auto`: Google elige el tamaño (fichas largas / recorrido).
  *
  * Importante: este nodo tiene que quedarse montado. Remount = nuevo push =
- * parpadeo / unfilled. No lo gates con loading de datos.
+ * parpadeo / unfilled. No lo gates con loading de datos ni lo keyees por
+ * consulta/línea.
  */
 export function AdSenseUnit({
     slot,
@@ -69,32 +71,29 @@ export function AdSenseUnit({
     if (!slot) return null;
 
     return (
-        <>
-            <AdSenseScript />
-            <ins
-                ref={insRef}
-                className={cn(
-                    "adsbygoogle",
-                    // Solo ocultar el <ins> vacío; el rail padre decide el layout.
-                    "data-[ad-status=unfilled]:hidden!",
-                    className,
-                )}
-                style={
-                    banner
-                        ? {
-                              display: "block",
-                              width: "100%",
-                              height: "100px",
-                              maxHeight: "100px",
-                          }
-                        : { display: "block" }
-                }
-                data-ad-client={ADSENSE_CLIENT}
-                data-ad-slot={slot}
-                data-ad-format={banner ? "horizontal" : "auto"}
-                data-full-width-responsive={banner ? "false" : "true"}
-            />
-        </>
+        <ins
+            ref={insRef}
+            className={cn(
+                "adsbygoogle",
+                // Solo ocultar el <ins> vacío; el rail padre decide el layout.
+                "data-[ad-status=unfilled]:hidden!",
+                className,
+            )}
+            style={
+                banner
+                    ? {
+                          display: "block",
+                          width: "100%",
+                          height: "100px",
+                          maxHeight: "100px",
+                      }
+                    : { display: "block" }
+            }
+            data-ad-client={ADSENSE_CLIENT}
+            data-ad-slot={slot}
+            data-ad-format={banner ? "horizontal" : "auto"}
+            data-full-width-responsive={banner ? "false" : "true"}
+        />
     );
 }
 
@@ -105,15 +104,19 @@ export function AdSenseUnit({
 export function AdSenseRail({
     slot,
     className,
+    placement,
 }: {
     slot: string | undefined;
     className?: string;
+    /** Identificador estable para tests / inspección (no afecta a AdSense). */
+    placement?: string;
 }) {
     if (!slot) return null;
 
     return (
         <aside
             aria-label="Publicidad"
+            data-ad-placement={placement}
             className={cn(
                 "mt-5 space-y-2 has-[[data-ad-status=unfilled]]:hidden",
                 className,
