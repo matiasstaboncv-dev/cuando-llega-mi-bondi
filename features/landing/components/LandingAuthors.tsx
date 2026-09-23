@@ -124,10 +124,10 @@ function AuthorCard({ author, index }: { author: Author; index: number }) {
 export function LandingAuthors() {
   return (
     <LandingSection
-      eyebrow="El equipo"
-      title="Hecho por"
-      highlight="marplatenses"
-      description="Un proyecto independiente y de código abierto, creado por dos estudiantes de Mar del Plata."
+      eyebrow="Basado en"
+      title="El proyecto"
+      highlight="original"
+      description="MDQ Bondi es un fork personal de código abierto. El trabajo pesado —conectar con los datos oficiales de la Municipalidad, armar el mapa en vivo— es de esta gente. Gracias."
     >
       <div className="grid gap-6 md:grid-cols-2">
         {AUTHORS.map((author, i) => (

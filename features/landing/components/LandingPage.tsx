@@ -1,11 +1,7 @@
 import { LandingHero } from "./LandingHero";
 import { LandingFeatures } from "./LandingFeatures";
 import { Footer } from "@shared/layout/Footer";
-import { LandingTestimonials } from "./LandingTestimonials";
-import { LandingStats } from "./LandingStats";
-import { SocialTestimonials } from "./SocialTestimonials";
 import { LandingAuthors } from "./LandingAuthors";
-import { LandingSponsors } from "./LandingSponsors";
 import { LandingFaq } from "./LandingFaq";
 import { LandingCta } from "./LandingCta";
 import { ParallaxDecor } from "./ParallaxDecor";
@@ -36,19 +32,7 @@ export function LandingPage() {
             <LandingFeatures />
           </Reveal>
           <Reveal>
-            <LandingTestimonials />
-          </Reveal>
-          <Reveal>
-            <LandingStats />
-          </Reveal>
-          <Reveal>
-            <SocialTestimonials />
-          </Reveal>
-          <Reveal>
             <LandingAuthors />
-          </Reveal>
-          <Reveal>
-            <LandingSponsors />
           </Reveal>
           <LandingFaq />
           <Reveal>

@@ -11,7 +11,7 @@ const FAQ_ITEMS = [
   },
   {
     q: "¿Es gratis?",
-    a: "Sí, es 100% gratuita. Se sostiene con publicidad no intrusiva, sin costos ocultos.",
+    a: "Sí, es 100% gratuita, sin publicidad ni costos ocultos.",
   },
   {
     q: "¿Necesito registrarme?",
