@@ -5,6 +5,7 @@ import { useCallback, useEffect, useMemo } from "react";
 import { usePathname } from "next/navigation";
 import { Header } from "@shared/layout/Header";
 import { BottomNav } from "@shared/layout/BottomNav";
+import { AppAmbientBackground } from "@shared/layout/AppAmbientBackground";
 import { SearchFlowProvider, useSearchFlowData } from "@features/search/context/SearchFlowContext";
 import { useSearchFlowStore } from "@features/search/store/useSearchFlowStore";
 import { useArribos } from "@features/arrivals/hooks/useArribos";
@@ -224,6 +225,7 @@ function MainLayoutContent({ children }: { children: ReactNode }) {
   return (
     <ArrivalsSessionProvider value={sessionValue}>
     <div className="flex min-h-pwa-shell flex-col lg:pl-60">
+      <AppAmbientBackground />
       <Header />
       {children}
       <BottomNav />
