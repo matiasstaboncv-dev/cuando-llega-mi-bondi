@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-/** Footer compartida por el índice del blog y cada artículo — misma estética que /un-mes-en-numeros. */
+/** Footer compartida por el índice del blog y cada artículo — misma estética que el resto de la app. */
 export function BlogFooter() {
     return (
         <footer className="bg-muted px-6 py-10">

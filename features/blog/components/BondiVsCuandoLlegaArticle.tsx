@@ -8,7 +8,7 @@ export function BondiVsCuandoLlegaArticle() {
                 cruzaste con dos nombres: la app oficial <strong>&ldquo;Cuándo Llega&rdquo;</strong> de
                 la Municipalidad y <strong>MDQ Bondi</strong>. Las dos muestran el arribo en tiempo real
                 de las líneas de colectivo de la ciudad, pero no son lo mismo. Esta es una comparación
-                directa, sin vueltas, hecha por el equipo que desarrolla MDQ Bondi.
+                directa, sin vueltas.
             </p>
 
             <h2>Qué es &ldquo;Cuándo Llega&rdquo;</h2>
@@ -21,9 +21,9 @@ export function BondiVsCuandoLlegaArticle() {
             <h2>Qué es MDQ Bondi</h2>
             <p>
                 Es una Progressive Web App (PWA) gratuita e independiente, sin afiliación con la
-                Municipalidad, hecha por dos desarrolladores marplatenses. Nació como respuesta de la
-                comunidad tech local y hoy la usan miles de vecinos para consultar arribos, recorridos y
-                paradas cercanas.
+                Municipalidad. Esta versión es un fork personal, sin uso comercial, de un proyecto
+                que nació como respuesta de la comunidad tech local marplatense para consultar
+                arribos, recorridos y paradas cercanas.
             </p>
 
             <h2>En qué se parecen</h2>
@@ -66,12 +66,12 @@ export function BondiVsCuandoLlegaArticle() {
                 : cualquiera puede revisar cómo funciona o proponer una mejora.
             </p>
 
-            <h2>Quién hizo MDQ Bondi</h2>
+            <h2>De dónde sale MDQ Bondi</h2>
             <p>
-                Nicolás Jiménez y Matias Celiz Ramos, dos desarrolladores de Mar del Plata. El lanzamiento
-                fue cubierto por Diario La Capital de Mar del Plata y Mi8, que la describieron como
-                &ldquo;la alternativa a la aplicación Cuándo Llega&rdquo;. Más sobre el equipo y los datos
-                de uso en <Link href="/acerca">/acerca</Link>.
+                Esta es un fork personal, sin uso comercial, del proyecto de código
+                abierto creado originalmente por Nicolás Jiménez y Matias Celiz Ramos,
+                dos desarrolladores de Mar del Plata. Más sobre el proyecto original
+                en <Link href="/acerca">/acerca</Link>.
             </p>
 
             <h2>Cuál conviene usar</h2>

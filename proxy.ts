@@ -22,8 +22,6 @@ const KNOWN_PATH_PATTERNS: RegExp[] = [
     /^\/privacidad$/,
     /^\/recorrido(\/[^/]+)?$/,
     /^\/terminos$/,
-    /^\/un-mes-en-numeros$/,
-    /^\/primer-trimestre-en-numeros$/,
     /^\/blog(\/[^/]+)?$/,
     /^\/contacto$/,
     /^\/opengraph-image$/,

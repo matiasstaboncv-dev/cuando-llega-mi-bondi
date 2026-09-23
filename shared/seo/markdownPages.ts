@@ -14,8 +14,6 @@ export const MARKDOWN_ROUTES: Record<string, string> = {
     "/acerca": "acerca",
     "/privacidad": "privacidad",
     "/contacto": "contacto",
-    "/un-mes-en-numeros": "un-mes-en-numeros",
-    "/primer-trimestre-en-numeros": "primer-trimestre-en-numeros",
     "/blog": "blog",
     "/blog/horarios-colectivo-mar-del-plata-verano": "blog-horarios-verano",
     "/blog/bondi-mdp-vs-cuando-llega": "blog-bondi-mdp-vs-cuando-llega",
@@ -43,8 +41,8 @@ Entrás a [/consultar](${BASE}/consultar), elegís tu línea y tu parada, y ves 
 - Datos oficiales de MGP, en una interfaz más rápida y liviana que la oficial.
 - Incluye líneas que no están en la app oficial (por ejemplo, la 221).
 
-## Quiénes la hicieron
-Proyecto independiente y de código abierto, sin afiliación con la Municipalidad de General Pueyrredón. Más en [/acerca](${BASE}/acerca).
+## De dónde sale
+Fork personal, sin uso comercial, de un proyecto independiente y de código abierto, sin afiliación con la Municipalidad de General Pueyrredón. Más en [/acerca](${BASE}/acerca).
 
 ## Más
 - [Sobre MDQ Bondi](${BASE}/acerca)
@@ -63,16 +61,16 @@ Información de colectivos en tiempo real para Mar del Plata. Rápida, clara y s
 - **Rápida**: sin registro ni pasos innecesarios.
 - **Independiente**: alternativa simple y directa para consultar el transporte.
 
-## Hecho por
+## Basado en
+Fork personal, sin uso comercial, del proyecto de código abierto creado originalmente por:
 - **Nicolás Jiménez** — Frontend Developer · Multimedia Designer · [dotfn.dev](https://dotfn.dev) · [GitHub](https://github.com/dotfn)
 - **Matias Celiz Ramos** — Técnico en Informática · [celizin.dev](https://celizin.dev) · [GitHub](https://github.com/Celiz)
 
 ## Código abierto
 - [Repositorio en GitHub](https://github.com/cuando-llega-mi-bondi/cuando-llega-mi-bondi)
-- [Reportar bugs o proponer mejoras](https://github.com/cuando-llega-mi-bondi/cuando-llega-mi-bondi/issues)
 
 ## Preguntas frecuentes
-- **¿Es gratis?** Sí. 100% gratuita. Se sostiene con publicidad no intrusiva.
+- **¿Es gratis?** Sí. 100% gratuita, sin publicidad.
 - **¿Funciona sin internet?** Necesitás conexión para obtener los datos en tiempo real.
 - **¿Qué líneas incluye?** Todas las líneas de colectivos de Mar del Plata.
 
@@ -94,8 +92,8 @@ Proyecto independiente y de código abierto. Consultas: [issues en GitHub](https
 - **Datos automáticos**: IP, dispositivo, navegador y páginas visitadas, vía los servicios de terceros de abajo.
 - **Datos en tu dispositivo**: favoritos y tema (claro/oscuro) se guardan localmente en el navegador, no se envían a nuestros servidores.
 
-## Publicidad y analítica (terceros)
-Google AdSense, Google Analytics, Microsoft Clarity y Vercel Analytics. Detalle completo y última fecha de actualización en [/privacidad](${BASE}/privacidad).
+## Analítica (terceros)
+Google Analytics, Microsoft Clarity y Vercel Analytics. Sin publicidad. Detalle completo y última fecha de actualización en [/privacidad](${BASE}/privacidad).
 
 ## Tus derechos
 Según la Ley N.º 25.326 de Protección de Datos Personales de Argentina, tenés derecho a acceder, rectificar, actualizar y suprimir tus datos personales. Contactanos en [/contacto](${BASE}/contacto).
@@ -105,62 +103,16 @@ Según la Ley N.º 25.326 de Protección de Datos Personales de Argentina, tené
 
     contacto: `# Contacto — MDQ Bondi
 
-MDQ Bondi es un proyecto independiente y de código abierto hecho en Mar del Plata, Argentina. No es una app oficial de la Municipalidad de General Pueyrredón.
+Fork personal, sin uso comercial, hecho en Mar del Plata, Argentina. No es una app oficial de la Municipalidad de General Pueyrredón.
 
 ## Reportar un problema o error en los horarios
 Abrí un [issue en GitHub](https://github.com/cuando-llega-mi-bondi/cuando-llega-mi-bondi/issues).
 
-## Consultas por publicidad
-Ver [/anunciate](${BASE}/anunciate) y los [Términos del lugar](${BASE}/terminos).
-
 ## Datos personales y privacidad
-Escribinos a maticelizramos@gmail.com para ejercer tus derechos sobre datos personales (Ley N.º 25.326) o por cualquier otra consulta. Más en [/privacidad](${BASE}/privacidad).
+No pedimos registro ni guardamos datos personales en un servidor propio. Más en [/privacidad](${BASE}/privacidad).
 
-## Quiénes somos
-[Nicolás Jiménez](https://dotfn.dev) y [Matias Celiz Ramos](https://celizin.dev). Código en [GitHub](https://github.com/cuando-llega-mi-bondi/cuando-llega-mi-bondi). Más en [/acerca](${BASE}/acerca).
-`,
-    "un-mes-en-numeros": `# MDQ Bondi: estadísticas del primer mes
-
-> Publicado el 28 de mayo de 2026. Datos estáticos de un período cerrado (29 de abril al 27 de mayo de 2026); no reflejan el uso actual del servicio. Para datos más recientes, ver [/primer-trimestre-en-numeros](${BASE}/primer-trimestre-en-numeros).
-
-En su primer mes, MDQ Bondi registró 19.267 usuarios activos únicos, 87.784 sesiones totales y aproximadamente 300.000 vistas de página. El 91% del tráfico proviene del Partido de General Pueyrredón. Cerca de 2 de cada 3 usuarios volvieron a usar la app, con un promedio de 4,5 visitas por usuario recurrente.
-
-## Por qué existe MDQ Bondi
-Mar del Plata dependía de "Cuándo Llega", la app oficial de la Municipalidad. Durante un tiempo dejó de estar disponible en las tiendas de aplicaciones, y la comunidad tech local respondió con MDQ Bondi: un proyecto sin fines de lucro, de código abierto, sin registro y sin necesidad de instalación (PWA).
-
-## Cobertura de prensa
-Diario La Capital de Mar del Plata y Mi8 cubrieron el lanzamiento, describiendo a MDQ Bondi como "la alternativa a la aplicación Cuándo Llega".
-
-## Más
-- [Inicio](${BASE}/)
-- [Sobre MDQ Bondi](${BASE}/acerca)
-- [Estadísticas del primer trimestre](${BASE}/primer-trimestre-en-numeros)
-- [Repositorio en GitHub](https://github.com/cuando-llega-mi-bondi/cuando-llega-mi-bondi)
-`,
-
-    "primer-trimestre-en-numeros": `# MDQ Bondi: el primer trimestre en números
-
-> Publicado el 27 de agosto de 2026. Datos de un período cerrado (26 de mayo al 23 de agosto de 2026); no reflejan el uso actual del servicio.
-
-En su primer trimestre completo, MDQ Bondi registró 22.893 usuarios activos, 133.694 sesiones y 762.918 vistas de página, según Google Analytics 4. El 58% de esos usuarios activos y más de la mitad de los usuarios nuevos llegaron en el último mes del período: la curva de crecimiento se acelera, no se aplana.
-
-## Adquisición: sin pauta paga
-59% de las sesiones son directas y 36% llegan por Google orgánico. El resto se reparte entre prensa, redes y buscadores con IA: 585 sesiones llegaron referidas desde ChatGPT en el trimestre, 265 de ellas solo en el último mes.
-
-## Retención
-En los últimos 30 días del trimestre, por cada día-usuario nuevo hubo 4,2 días-usuario de gente recurrente (31.880 recurrentes contra 7.631 nuevos), más del doble de la proporción 2:1 del mes de lanzamiento.
-
-## Uso del producto
-En los últimos 30 días se registraron 284.576 consultas de horario repartidas en 50 líneas de colectivo distintas y más de 500 paradas, sin concentrarse en una sola línea. La pantalla /consultar tuvo 488.284 vistas con 11% de rebote.
-
-## Alcance geográfico
-74% de los usuarios activos están en Mar del Plata. Buenos Aires es la segunda ciudad, con 13.290 usuarios activos, muy por delante de cualquier otra localidad del país.
-
-## Más
-- [Inicio](${BASE}/)
-- [Sobre MDQ Bondi](${BASE}/acerca)
-- [Estadísticas del primer mes](${BASE}/un-mes-en-numeros)
-- [Repositorio en GitHub](https://github.com/cuando-llega-mi-bondi/cuando-llega-mi-bondi)
+## Sobre este fork
+Basado en el proyecto de código abierto [MDQ Bondi](https://github.com/cuando-llega-mi-bondi/cuando-llega-mi-bondi), creado originalmente por [Nicolás Jiménez](https://dotfn.dev) y [Matias Celiz Ramos](https://celizin.dev). Más en [/acerca](${BASE}/acerca).
 `,
     "blog-horarios-verano": `# Horarios de colectivo en Mar del Plata en verano: guía para no perderte el bondi
 
@@ -188,16 +140,12 @@ Salí con más margen del habitual cerca del mediodía y a la tarde, las franjas
 `,
     blog: `# Blog — MDQ Bondi
 
-Comparativas, guías e informes de uso sobre transporte público en Mar del Plata.
+Comparativas y guías sobre transporte público en Mar del Plata.
 
 ## Artículos
 - [Horarios de colectivo en Mar del Plata en verano](${BASE}/blog/horarios-colectivo-mar-del-plata-verano) — guía para consultar arribos en tiempo real y llegar a la playa en temporada alta.
 - [MDQ Bondi vs. Cuándo Llega](${BASE}/blog/bondi-mdp-vs-cuando-llega) — comparativa entre la app oficial de la Municipalidad de General Pueyrredón y MDQ Bondi.
 - [Cómo saber cuándo llega el colectivo en Mar del Plata](${BASE}/blog/como-saber-cuando-llega-el-colectivo-en-mar-del-plata) — guía con todas las formas de consultar horarios en tiempo real.
-
-## Informes de uso
-- [El primer trimestre en números](${BASE}/primer-trimestre-en-numeros) — 22.893 usuarios activos, 763.000 vistas.
-- [El primer mes en números](${BASE}/un-mes-en-numeros) — 19.267 usuarios activos, 300.000 vistas.
 
 ## Más
 - [Inicio](${BASE}/)
@@ -206,7 +154,7 @@ Comparativas, guías e informes de uso sobre transporte público en Mar del Plat
 
     "blog-bondi-mdp-vs-cuando-llega": `# MDQ Bondi vs. Cuándo Llega: comparativa de apps de colectivos en Mar del Plata
 
-Comparativa neutral, hecha por el equipo de MDQ Bondi, entre la app oficial "Cuándo Llega" de la Municipalidad de General Pueyrredón (MGP) y MDQ Bondi.
+Comparativa entre la app oficial "Cuándo Llega" de la Municipalidad de General Pueyrredón (MGP) y MDQ Bondi.
 
 ## En qué se parecen
 Ambas son gratuitas y usan los mismos datos oficiales en tiempo real de la MGP.
@@ -217,8 +165,8 @@ Ambas son gratuitas y usan los mismos datos oficiales en tiempo real de la MGP.
 - **Cobertura**: MDQ Bondi suma la línea 221 (Costa Azul) vía trazado manual, no incluida en la API oficial.
 - **Código**: MDQ Bondi es [código abierto](https://github.com/cuando-llega-mi-bondi/cuando-llega-mi-bondi).
 
-## Quién hizo MDQ Bondi
-Nicolás Jiménez y Matias Celiz Ramos, dos desarrolladores marplatenses. Cobertura de prensa en Diario La Capital de Mar del Plata y Mi8.
+## De dónde sale MDQ Bondi
+Este es un fork personal, sin uso comercial, del proyecto creado originalmente por Nicolás Jiménez y Matias Celiz Ramos, dos desarrolladores marplatenses.
 
 ## Más
 - [Blog](${BASE}/blog)

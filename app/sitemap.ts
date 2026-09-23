@@ -43,18 +43,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
             priority: 0.5,
         },
         {
-            url: `${baseUrl}/un-mes-en-numeros`,
-            lastModified: now,
-            changeFrequency: "monthly",
-            priority: 0.5,
-        },
-        {
-            url: `${baseUrl}/primer-trimestre-en-numeros`,
-            lastModified: now,
-            changeFrequency: "monthly",
-            priority: 0.5,
-        },
-        {
             url: `${baseUrl}/blog`,
             lastModified: now,
             changeFrequency: "weekly",

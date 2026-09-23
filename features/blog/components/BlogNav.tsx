@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-/** Nav sticky compartida por el índice del blog y cada artículo — misma estética que /un-mes-en-numeros. */
+/** Nav sticky compartida por el índice del blog y cada artículo — misma estética que el resto de la app. */
 export function BlogNav() {
     return (
         <nav className="sticky top-0 z-[100] border-b border-border bg-background/88 px-6 backdrop-blur-md">

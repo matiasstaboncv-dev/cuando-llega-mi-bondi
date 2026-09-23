@@ -17,8 +17,8 @@ export function ComoSaberCuandoLlegaArticle() {
 
             <h2>Opción 2: MDQ Bondi</h2>
             <p>
-                Es una PWA gratuita, sin registro, hecha por dos desarrolladores marplatenses, que
-                consume la misma data oficial en tiempo real de la MGP y suma la línea 221 (Costa Azul)
+                Es una PWA gratuita, sin registro, que consume la misma data oficial en tiempo
+                real de la MGP y suma la línea 221 (Costa Azul)
                 por fuera de la API municipal. Se abre directo en el navegador, sin pasar por ninguna
                 tienda de aplicaciones. Ver la{" "}
                 <Link href="/blog/bondi-mdp-vs-cuando-llega">comparativa completa con la app oficial</Link>

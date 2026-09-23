@@ -13,7 +13,7 @@ export const metadata: Metadata = {
         absolute: "Contacto | MDQ Bondi",
     },
     description:
-        "Cómo contactar al equipo de MDQ Bondi: reportar un error en los horarios, consultar por publicidad o ejercer tus derechos sobre datos personales.",
+        "Cómo reportar un error en los horarios de MDQ Bondi y de dónde sale este fork.",
     alternates: {
         canonical: "/contacto",
     },
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
         url: "https://mdqbondi.com.ar/contacto",
         title: "Contacto | MDQ Bondi",
         description:
-            "Cómo contactar al equipo de MDQ Bondi: reportar un error, consultar por publicidad o ejercer tus derechos sobre datos personales.",
+            "Cómo reportar un error en los horarios de MDQ Bondi y de dónde sale este fork.",
         siteName: "MDQ Bondi",
         images: ["/opengraph-image"],
     },
@@ -130,64 +130,36 @@ export default function ContactoPage() {
                         </Card>
                     </Section>
 
-                    <Section title="Consultas por publicidad">
-                        <Card>
-                            <p>
-                                Para anunciar en Consultar (los lugares publicitarios
-                                autoservicio), la compra y el historial de precios están
-                                en{" "}
-                                <a
-                                    href="/anunciate"
-                                    className="underline decoration-border underline-offset-2 hover:text-foreground"
-                                >
-                                    /anunciate
-                                </a>
-                                . Las condiciones están en los{" "}
-                                <a
-                                    href="/terminos"
-                                    className="underline decoration-border underline-offset-2 hover:text-foreground"
-                                >
-                                    Términos del lugar
-                                </a>
-                                .
-                            </p>
-                        </Card>
-                    </Section>
-
                     <Section title="Datos personales y privacidad">
                         <Card>
                             <p>
-                                Para ejercer tus derechos de acceso, rectificación o
-                                supresión de datos personales según la Ley N.º 25.326, o
-                                por cualquier otra consulta que no encaje en las
-                                categorías de arriba, escribinos a{" "}
-                                <ExtLink href="mailto:maticelizramos@gmail.com">
-                                    maticelizramos@gmail.com
-                                </ExtLink>
-                                . Más detalle sobre qué datos tratamos en la{" "}
+                                No pedimos registro ni guardamos datos personales en un
+                                servidor propio (ver la{" "}
                                 <a
                                     href="/privacidad"
                                     className="underline decoration-border underline-offset-2 hover:text-foreground"
                                 >
                                     política de privacidad
                                 </a>
-                                .
+                                ). Favoritos e historial quedan solo en tu dispositivo.
                             </p>
                         </Card>
                     </Section>
 
-                    <Section title="Quiénes somos">
+                    <Section title="Sobre este fork">
                         <p>
-                            MDQ Bondi lo desarrollan y mantienen{" "}
+                            Esta versión es un fork personal, sin uso comercial, basado en
+                            el proyecto{" "}
+                            <ExtLink href="https://github.com/cuando-llega-mi-bondi/cuando-llega-mi-bondi">
+                                MDQ Bondi (código abierto)
+                            </ExtLink>
+                            , creado originalmente por{" "}
                             <ExtLink href="https://dotfn.dev">Nicolás Jiménez</ExtLink> y{" "}
                             <ExtLink href="https://celizin.dev">
                                 Matias Celiz Ramos
                             </ExtLink>
-                            . El código es público en{" "}
-                            <ExtLink href="https://github.com/cuando-llega-mi-bondi/cuando-llega-mi-bondi">
-                                GitHub
-                            </ExtLink>
-                            . Más sobre el proyecto y el equipo en{" "}
+                            . Para reportar un bug del proyecto original o ver su código,
+                            los issues de ese repositorio son el canal correcto. Más en{" "}
                             <a
                                 href="/acerca"
                                 className="underline decoration-border underline-offset-2 hover:text-foreground"

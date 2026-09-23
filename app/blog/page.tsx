@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { ARTICLES, REPORTS } from "@features/blog/data/articles";
+import { ARTICLES } from "@features/blog/data/articles";
 import { ArticleCard } from "@features/blog/components/ArticleCard";
 import { BlogNav } from "@features/blog/components/BlogNav";
 import { BlogFooter } from "@features/blog/components/BlogFooter";
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
         url: `${BASE_URL}/blog`,
         title: "Blog — MDQ Bondi",
         description:
-            "Comparativas y guías sobre transporte público en Mar del Plata, hechas por el equipo de MDQ Bondi.",
+            "Comparativas y guías sobre transporte público en Mar del Plata.",
         siteName: "MDQ Bondi",
     },
     twitter: {
@@ -37,10 +37,9 @@ export const metadata: Metadata = {
     },
 };
 
-const FEED_ITEMS = [
-    ...ARTICLES.map((a) => ({ ...a, href: `/blog/${a.slug}` })),
-    ...REPORTS,
-].sort((a, b) => new Date(b.datePublished).getTime() - new Date(a.datePublished).getTime());
+const FEED_ITEMS = ARTICLES.map((a) => ({ ...a, href: `/blog/${a.slug}` })).sort(
+    (a, b) => new Date(b.datePublished).getTime() - new Date(a.datePublished).getTime(),
+);
 
 const breadcrumbJsonLd = {
     "@context": "https://schema.org",

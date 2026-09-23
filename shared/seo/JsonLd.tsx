@@ -43,7 +43,6 @@ export function JsonLd() {
         "contactPoint": {
             "@type": "ContactPoint",
             "contactType": "customer support",
-            "email": "maticelizramos@gmail.com",
             "url": "https://mdqbondi.com.ar/contacto",
             "availableLanguage": ["Spanish", "English"],
         },

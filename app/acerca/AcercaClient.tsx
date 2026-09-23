@@ -25,7 +25,7 @@ import { IconXBrand } from "@shared/icons/IconXBrand";
 const FAQ = [
     {
         q: "¿Es gratis?",
-        a: "Sí. 100% gratuita. Se sostiene con publicidad no intrusiva.",
+        a: "Sí. 100% gratuita, sin publicidad.",
     },
     {
         q: "¿Funciona sin internet?",
@@ -330,11 +330,15 @@ export function AcercaClient() {
                             </section>
                         )}
 
-                        {/* ── HECHO POR ─────────────────────────────── */}
+                        {/* ── BASADO EN ─────────────────────────────── */}
                         <section className="space-y-3">
                             <h2 className="text-[10.4px] font-normal uppercase tracking-wider text-muted-foreground">
-                                Hecho por
+                                Basado en
                             </h2>
+                            <p className="text-[13px] leading-relaxed text-muted-foreground">
+                                Este es un fork personal, sin uso comercial, del proyecto
+                                de código abierto creado originalmente por:
+                            </p>
                             <div className="space-y-3 lg:grid lg:grid-cols-2 lg:items-start lg:gap-4 lg:space-y-0">
                                 {DEVELOPERS.map((dev) => (
                                     <DevCard key={dev.name} dev={dev} />
