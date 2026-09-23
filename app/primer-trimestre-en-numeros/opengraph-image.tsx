@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Bondi MDP: el primer trimestre en números. 22.893 usuarios activos. 763.000 vistas.";
+export const alt = "MDQ Bondi: el primer trimestre en números. 22.893 usuarios activos. 763.000 vistas.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -72,8 +72,8 @@ export default async function OpenGraphImage() {
                         lineHeight: 1,
                     }}
                 >
-                    <span style={{ color: "#f0f4f8" }}>BONDI</span>
-                    <span style={{ color: "#f9cd4a" }}>MDP</span>
+                    <span style={{ color: "#f0f4f8" }}>MDQ</span>
+                    <span style={{ color: "#f9cd4a" }}>BONDI</span>
                 </div>
             </div>
         ),

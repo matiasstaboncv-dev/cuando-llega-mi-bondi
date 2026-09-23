@@ -9,7 +9,7 @@ export function LandingTestimonials() {
       eyebrow="En los medios"
       title="Hablan de"
       highlight="nosotros"
-      description="El impacto de Bondi MDP en los medios locales."
+      description="El impacto de MDQ Bondi en los medios locales."
     >
       <PressMentions />
     </LandingSection>

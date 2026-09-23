@@ -12,13 +12,13 @@ export const instant = false;
 
 export const metadata: Metadata = {
     title: {
-        absolute: "Recorridos de colectivos en Mar del Plata — Bondi MDP",
+        absolute: "Recorridos de colectivos en Mar del Plata — MDQ Bondi",
     },
     description:
         "Consultá el recorrido completo de cada línea de bondi en Mar del Plata. Paradas, mapas y horarios actualizados en tiempo real.",
     keywords: [
         "recorridos colectivos mar del plata",
-        "mapa bondi mdp",
+        "mapa mdq bondi",
         "paradas colectivo mar del plata",
         "líneas colectivo mdp",
     ],
@@ -28,11 +28,11 @@ export const metadata: Metadata = {
     openGraph: {
         type: "website",
         locale: "es_AR",
-        url: "https://bondimdp.com.ar/recorrido",
-        title: "Recorridos de colectivos en Mar del Plata — Bondi MDP",
+        url: "https://mdqbondi.com.ar/recorrido",
+        title: "Recorridos de colectivos en Mar del Plata — MDQ Bondi",
         description:
             "Consultá el recorrido completo de cada línea de bondi. Paradas, mapas y horarios en tiempo real.",
-        siteName: "Bondi MDP",
+        siteName: "MDQ Bondi",
         images: ["/opengraph-image"],
     },
     twitter: {

@@ -9,7 +9,7 @@ import { adSlotFloorArs, adSlotStepArs, formatArs } from "@features/sponsors/lib
 
 export const metadata: Metadata = {
     title: {
-        absolute: "Términos del lugar | Bondi MDP",
+        absolute: "Términos del lugar | MDQ Bondi",
     },
     description:
         "El lugar se compra y se pierde. No hay garantía de visitas, clics ni ventas. Escrito en criollo, a propósito.",
@@ -19,11 +19,11 @@ export const metadata: Metadata = {
     openGraph: {
         type: "website",
         locale: "es_AR",
-        url: "https://bondimdp.com.ar/terminos",
-        title: "Términos del lugar | Bondi MDP",
+        url: "https://mdqbondi.com.ar/terminos",
+        title: "Términos del lugar | MDQ Bondi",
         description:
             "El lugar se compra y se pierde. No hay garantía de visitas, clics ni ventas. Escrito en criollo, a propósito.",
-        siteName: "Bondi MDP",
+        siteName: "MDQ Bondi",
         images: ["/opengraph-image"],
     },
 };
@@ -64,7 +64,7 @@ export default function TerminosPage() {
 
                 <Section title="Qué es esto">
                     <p>
-                        Bondi MDP es una app para ver cuándo llega el colectivo en Mar del
+                        MDQ Bondi es una app para ver cuándo llega el colectivo en Mar del
                         Plata. Los «lugares» son avisos rotulados como publicidad en
                         Consultar — abajo de elegir la línea, sobre todo en el celular.
                         Hay dos recuadros, uno arriba del otro, y no se compran por
@@ -73,7 +73,7 @@ export default function TerminosPage() {
                         calidad, ni antigüedad, ni nada. Es plata y listo.
                     </p>
                     <p>
-                        Bondi MDP es un proyecto independiente, de código abierto. No es
+                        MDQ Bondi es un proyecto independiente, de código abierto. No es
                         oficial de la Municipalidad.
                     </p>
                 </Section>
@@ -90,7 +90,7 @@ export default function TerminosPage() {
                         lugar. Comprá acá solo si te da igual perder esa plata.
                     </p>
                     <p>
-                        Bondi MDP no se hace cargo de ningún resultado. Ni de visitas, ni
+                        MDQ Bondi no se hace cargo de ningún resultado. Ni de visitas, ni
                         de clics, ni de ventas, ni de seguidores, ni de que la app se haga
                         más conocida, ni de lo que pase después con lo que publicaste.
                         Comprás que tu link se muestre mientras sigas entre los dos que
@@ -132,7 +132,7 @@ export default function TerminosPage() {
                         mintiendo a nadie.
                     </p>
                     <p>
-                        Bondi MDP no revisa, no aprueba ni recomienda nada de lo que
+                        MDQ Bondi no revisa, no aprueba ni recomienda nada de lo que
                         aparece. Que algo esté publicado significa que alguien pagó, y nada
                         más que eso.
                     </p>
@@ -213,7 +213,7 @@ export default function TerminosPage() {
 
                 <Section title="Si esto cierra">
                     <p>
-                        Bondi MDP puede dejar de mostrar el lugar en cualquier momento. Si
+                        MDQ Bondi puede dejar de mostrar el lugar en cualquier momento. Si
                         eso pasa, la plata que pusiste no se devuelve: no hay un plazo
                         mínimo de exhibición. Los precios y las reglas también pueden
                         cambiar.
@@ -226,7 +226,7 @@ export default function TerminosPage() {
                         continuo ni de resultados.
                     </p>
                     <p>
-                        En la medida en que la ley lo permita, Bondi MDP y quienes lo
+                        En la medida en que la ley lo permita, MDQ Bondi y quienes lo
                         mantienen no responden por daños indirectos, lucro cesante, pérdida
                         de oportunidades, de ventas ni de reputación. La responsabilidad
                         total por un reclamo relacionado con tu compra no puede superar lo

@@ -6,7 +6,7 @@
  * la UI. Si el copy de una página cambia, actualizar acá también.
  */
 
-const BASE = "https://bondimdp.com.ar";
+const BASE = "https://mdqbondi.com.ar";
 
 /** Rutas HTML con contraparte Markdown. La key es el slug bajo /md/. */
 export const MARKDOWN_ROUTES: Record<string, string> = {
@@ -23,7 +23,7 @@ export const MARKDOWN_ROUTES: Record<string, string> = {
 };
 
 const PAGES: Record<string, string> = {
-    home: `# Bondi MDP — App de colectivos en Mar del Plata
+    home: `# MDQ Bondi — App de colectivos en Mar del Plata
 
 > App gratuita para saber cuándo llega tu bondi en Mar del Plata. Horarios,
 > recorridos y paradas en tiempo real de todas las líneas (511, 522, 541 y
@@ -47,14 +47,14 @@ Entrás a [/consultar](${BASE}/consultar), elegís tu línea y tu parada, y ves 
 Proyecto independiente y de código abierto, sin afiliación con la Municipalidad de General Pueyrredón. Más en [/acerca](${BASE}/acerca).
 
 ## Más
-- [Sobre Bondi MDP](${BASE}/acerca)
+- [Sobre MDQ Bondi](${BASE}/acerca)
 - [Contacto](${BASE}/contacto)
 - [Política de privacidad](${BASE}/privacidad)
 - [Mapa del sitio](${BASE}/sitemap.xml)
 - [llms.txt](${BASE}/llms.txt)
 `,
 
-    acerca: `# Acerca de Bondi MDP
+    acerca: `# Acerca de MDQ Bondi
 
 Información de colectivos en tiempo real para Mar del Plata. Rápida, clara y sin vueltas.
 
@@ -82,9 +82,9 @@ Información de colectivos en tiempo real para Mar del Plata. Rápida, clara y s
 - [Política de privacidad](${BASE}/privacidad)
 `,
 
-    privacidad: `# Política de privacidad — Bondi MDP
+    privacidad: `# Política de privacidad — MDQ Bondi
 
-Bondi MDP es una app gratuita para consultar el transporte público de Mar del Plata. No pedimos registro ni creamos cuentas de usuario, y no vendemos tus datos personales.
+MDQ Bondi es una app gratuita para consultar el transporte público de Mar del Plata. No pedimos registro ni creamos cuentas de usuario, y no vendemos tus datos personales.
 
 ## Responsable
 Proyecto independiente y de código abierto. Consultas: [issues en GitHub](https://github.com/cuando-llega-mi-bondi/cuando-llega-mi-bondi/issues) o [contacto](${BASE}/contacto).
@@ -103,9 +103,9 @@ Según la Ley N.º 25.326 de Protección de Datos Personales de Argentina, tené
 *Este es un resumen. La página [/privacidad](${BASE}/privacidad) es la fuente de verdad.*
 `,
 
-    contacto: `# Contacto — Bondi MDP
+    contacto: `# Contacto — MDQ Bondi
 
-Bondi MDP es un proyecto independiente y de código abierto hecho en Mar del Plata, Argentina. No es una app oficial de la Municipalidad de General Pueyrredón.
+MDQ Bondi es un proyecto independiente y de código abierto hecho en Mar del Plata, Argentina. No es una app oficial de la Municipalidad de General Pueyrredón.
 
 ## Reportar un problema o error en los horarios
 Abrí un [issue en GitHub](https://github.com/cuando-llega-mi-bondi/cuando-llega-mi-bondi/issues).
@@ -119,30 +119,30 @@ Escribinos a maticelizramos@gmail.com para ejercer tus derechos sobre datos pers
 ## Quiénes somos
 [Nicolás Jiménez](https://dotfn.dev) y [Matias Celiz Ramos](https://celizin.dev). Código en [GitHub](https://github.com/cuando-llega-mi-bondi/cuando-llega-mi-bondi). Más en [/acerca](${BASE}/acerca).
 `,
-    "un-mes-en-numeros": `# Bondi MDP: estadísticas del primer mes
+    "un-mes-en-numeros": `# MDQ Bondi: estadísticas del primer mes
 
 > Publicado el 28 de mayo de 2026. Datos estáticos de un período cerrado (29 de abril al 27 de mayo de 2026); no reflejan el uso actual del servicio. Para datos más recientes, ver [/primer-trimestre-en-numeros](${BASE}/primer-trimestre-en-numeros).
 
-En su primer mes, Bondi MDP registró 19.267 usuarios activos únicos, 87.784 sesiones totales y aproximadamente 300.000 vistas de página. El 91% del tráfico proviene del Partido de General Pueyrredón. Cerca de 2 de cada 3 usuarios volvieron a usar la app, con un promedio de 4,5 visitas por usuario recurrente.
+En su primer mes, MDQ Bondi registró 19.267 usuarios activos únicos, 87.784 sesiones totales y aproximadamente 300.000 vistas de página. El 91% del tráfico proviene del Partido de General Pueyrredón. Cerca de 2 de cada 3 usuarios volvieron a usar la app, con un promedio de 4,5 visitas por usuario recurrente.
 
-## Por qué existe Bondi MDP
-Mar del Plata dependía de "Cuándo Llega", la app oficial de la Municipalidad. Durante un tiempo dejó de estar disponible en las tiendas de aplicaciones, y la comunidad tech local respondió con Bondi MDP: un proyecto sin fines de lucro, de código abierto, sin registro y sin necesidad de instalación (PWA).
+## Por qué existe MDQ Bondi
+Mar del Plata dependía de "Cuándo Llega", la app oficial de la Municipalidad. Durante un tiempo dejó de estar disponible en las tiendas de aplicaciones, y la comunidad tech local respondió con MDQ Bondi: un proyecto sin fines de lucro, de código abierto, sin registro y sin necesidad de instalación (PWA).
 
 ## Cobertura de prensa
-Diario La Capital de Mar del Plata y Mi8 cubrieron el lanzamiento, describiendo a Bondi MDP como "la alternativa a la aplicación Cuándo Llega".
+Diario La Capital de Mar del Plata y Mi8 cubrieron el lanzamiento, describiendo a MDQ Bondi como "la alternativa a la aplicación Cuándo Llega".
 
 ## Más
 - [Inicio](${BASE}/)
-- [Sobre Bondi MDP](${BASE}/acerca)
+- [Sobre MDQ Bondi](${BASE}/acerca)
 - [Estadísticas del primer trimestre](${BASE}/primer-trimestre-en-numeros)
 - [Repositorio en GitHub](https://github.com/cuando-llega-mi-bondi/cuando-llega-mi-bondi)
 `,
 
-    "primer-trimestre-en-numeros": `# Bondi MDP: el primer trimestre en números
+    "primer-trimestre-en-numeros": `# MDQ Bondi: el primer trimestre en números
 
 > Publicado el 27 de agosto de 2026. Datos de un período cerrado (26 de mayo al 23 de agosto de 2026); no reflejan el uso actual del servicio.
 
-En su primer trimestre completo, Bondi MDP registró 22.893 usuarios activos, 133.694 sesiones y 762.918 vistas de página, según Google Analytics 4. El 58% de esos usuarios activos y más de la mitad de los usuarios nuevos llegaron en el último mes del período: la curva de crecimiento se acelera, no se aplana.
+En su primer trimestre completo, MDQ Bondi registró 22.893 usuarios activos, 133.694 sesiones y 762.918 vistas de página, según Google Analytics 4. El 58% de esos usuarios activos y más de la mitad de los usuarios nuevos llegaron en el último mes del período: la curva de crecimiento se acelera, no se aplana.
 
 ## Adquisición: sin pauta paga
 59% de las sesiones son directas y 36% llegan por Google orgánico. El resto se reparte entre prensa, redes y buscadores con IA: 585 sesiones llegaron referidas desde ChatGPT en el trimestre, 265 de ellas solo en el último mes.
@@ -158,7 +158,7 @@ En los últimos 30 días se registraron 284.576 consultas de horario repartidas 
 
 ## Más
 - [Inicio](${BASE}/)
-- [Sobre Bondi MDP](${BASE}/acerca)
+- [Sobre MDQ Bondi](${BASE}/acerca)
 - [Estadísticas del primer mes](${BASE}/un-mes-en-numeros)
 - [Repositorio en GitHub](https://github.com/cuando-llega-mi-bondi/cuando-llega-mi-bondi)
 `,
@@ -186,13 +186,13 @@ Salí con más margen del habitual cerca del mediodía y a la tarde, las franjas
 - [Blog](${BASE}/blog)
 - [Inicio](${BASE}/)
 `,
-    blog: `# Blog — Bondi MDP
+    blog: `# Blog — MDQ Bondi
 
 Comparativas, guías e informes de uso sobre transporte público en Mar del Plata.
 
 ## Artículos
 - [Horarios de colectivo en Mar del Plata en verano](${BASE}/blog/horarios-colectivo-mar-del-plata-verano) — guía para consultar arribos en tiempo real y llegar a la playa en temporada alta.
-- [Bondi MDP vs. Cuándo Llega](${BASE}/blog/bondi-mdp-vs-cuando-llega) — comparativa entre la app oficial de la Municipalidad de General Pueyrredón y Bondi MDP.
+- [MDQ Bondi vs. Cuándo Llega](${BASE}/blog/bondi-mdp-vs-cuando-llega) — comparativa entre la app oficial de la Municipalidad de General Pueyrredón y MDQ Bondi.
 - [Cómo saber cuándo llega el colectivo en Mar del Plata](${BASE}/blog/como-saber-cuando-llega-el-colectivo-en-mar-del-plata) — guía con todas las formas de consultar horarios en tiempo real.
 
 ## Informes de uso
@@ -201,23 +201,23 @@ Comparativas, guías e informes de uso sobre transporte público en Mar del Plat
 
 ## Más
 - [Inicio](${BASE}/)
-- [Sobre Bondi MDP](${BASE}/acerca)
+- [Sobre MDQ Bondi](${BASE}/acerca)
 `,
 
-    "blog-bondi-mdp-vs-cuando-llega": `# Bondi MDP vs. Cuándo Llega: comparativa de apps de colectivos en Mar del Plata
+    "blog-bondi-mdp-vs-cuando-llega": `# MDQ Bondi vs. Cuándo Llega: comparativa de apps de colectivos en Mar del Plata
 
-Comparativa neutral, hecha por el equipo de Bondi MDP, entre la app oficial "Cuándo Llega" de la Municipalidad de General Pueyrredón (MGP) y Bondi MDP.
+Comparativa neutral, hecha por el equipo de MDQ Bondi, entre la app oficial "Cuándo Llega" de la Municipalidad de General Pueyrredón (MGP) y MDQ Bondi.
 
 ## En qué se parecen
 Ambas son gratuitas y usan los mismos datos oficiales en tiempo real de la MGP.
 
 ## Diferencias
-- **Instalación**: "Cuándo Llega" requiere descarga desde Google Play o App Store. Bondi MDP es una PWA instalable directo desde el navegador, sin tienda de apps.
-- **Registro**: Bondi MDP no pide cuenta.
-- **Cobertura**: Bondi MDP suma la línea 221 (Costa Azul) vía trazado manual, no incluida en la API oficial.
-- **Código**: Bondi MDP es [código abierto](https://github.com/cuando-llega-mi-bondi/cuando-llega-mi-bondi).
+- **Instalación**: "Cuándo Llega" requiere descarga desde Google Play o App Store. MDQ Bondi es una PWA instalable directo desde el navegador, sin tienda de apps.
+- **Registro**: MDQ Bondi no pide cuenta.
+- **Cobertura**: MDQ Bondi suma la línea 221 (Costa Azul) vía trazado manual, no incluida en la API oficial.
+- **Código**: MDQ Bondi es [código abierto](https://github.com/cuando-llega-mi-bondi/cuando-llega-mi-bondi).
 
-## Quién hizo Bondi MDP
+## Quién hizo MDQ Bondi
 Nicolás Jiménez y Matias Celiz Ramos, dos desarrolladores marplatenses. Cobertura de prensa en Diario La Capital de Mar del Plata y Mi8.
 
 ## Más
@@ -231,11 +231,11 @@ Guía de las formas disponibles para consultar el arribo de colectivos en tiempo
 
 ## Opciones
 - App oficial "Cuándo Llega" de la Municipalidad de General Pueyrredón.
-- [Bondi MDP](${BASE}/) — alternativa PWA, sin registro, con la misma data oficial.
+- [MDQ Bondi](${BASE}/) — alternativa PWA, sin registro, con la misma data oficial.
 - Consultá directo en [/consultar](${BASE}/consultar), mirá el [recorrido de tu línea](${BASE}/recorrido), planificá con [cómo llego](${BASE}/como-llego) o encontrá la [parada más cercana](${BASE}/paradas-cerca).
 
 ## Más
-- [Comparativa Bondi MDP vs. Cuándo Llega](${BASE}/blog/bondi-mdp-vs-cuando-llega)
+- [Comparativa MDQ Bondi vs. Cuándo Llega](${BASE}/blog/bondi-mdp-vs-cuando-llega)
 - [Blog](${BASE}/blog)
 `,
 };
@@ -247,7 +247,7 @@ export function getMarkdownPage(slug: string): string | null {
 /** Cuerpo Markdown para rutas que no existen (404), con salida hacia adelante. */
 export const NOT_FOUND_MARKDOWN = `# 404 — Página no encontrada
 
-La ruta pedida no existe en Bondi MDP.
+La ruta pedida no existe en MDQ Bondi.
 
 ## Dónde mirar
 - [Inicio](${BASE}/)

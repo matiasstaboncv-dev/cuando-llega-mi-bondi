@@ -15,7 +15,7 @@ export function ComoSaberCuandoLlegaArticle() {
                 App Store. Usa la posición GPS real de las unidades para estimar el arribo a cada parada.
             </p>
 
-            <h2>Opción 2: Bondi MDP</h2>
+            <h2>Opción 2: MDQ Bondi</h2>
             <p>
                 Es una PWA gratuita, sin registro, hecha por dos desarrolladores marplatenses, que
                 consume la misma data oficial en tiempo real de la MGP y suma la línea 221 (Costa Azul)
@@ -60,11 +60,11 @@ export function ComoSaberCuandoLlegaArticle() {
             <h2>Preguntas frecuentes</h2>
 
             <h3>¿Es gratis saber cuándo llega el colectivo?</h3>
-            <p>Sí, tanto la app oficial como Bondi MDP son gratuitas.</p>
+            <p>Sí, tanto la app oficial como MDQ Bondi son gratuitas.</p>
 
             <h3>¿Necesito crear una cuenta?</h3>
             <p>
-                No. Ni la app oficial ni Bondi MDP piden registro para consultar arribos en tiempo real.
+                No. Ni la app oficial ni MDQ Bondi piden registro para consultar arribos en tiempo real.
             </p>
 
             <h3>¿Los horarios son en tiempo real o teóricos?</h3>
@@ -76,7 +76,7 @@ export function ComoSaberCuandoLlegaArticle() {
             <p>
                 ¿Querés compararlas antes de decidir? Mirá la{" "}
                 <Link href="/blog/bondi-mdp-vs-cuando-llega">
-                    comparativa entre Bondi MDP y la app oficial
+                    comparativa entre MDQ Bondi y la app oficial
                 </Link>
                 .
             </p>

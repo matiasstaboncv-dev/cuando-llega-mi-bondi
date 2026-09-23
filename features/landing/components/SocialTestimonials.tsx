@@ -17,7 +17,7 @@ const socialTestimonials = [
     user: "Jonatan Leonardo",
     handle: "@jonimdp",
     quote:
-      "Ohh está joyaaa le vas haciendo el seguimiento en el mapita búsquenla en Google por bondimdp.com.ar",
+      "Ohh está joyaaa le vas haciendo el seguimiento en el mapita búsquenla en Google por mdqbondi.com.ar",
   },
   {
     avatar: "/assets/03.jpg",

@@ -10,21 +10,21 @@ export const instant = false;
 
 export const metadata: Metadata = {
     title: {
-        absolute: "Contacto | Bondi MDP",
+        absolute: "Contacto | MDQ Bondi",
     },
     description:
-        "Cómo contactar al equipo de Bondi MDP: reportar un error en los horarios, consultar por publicidad o ejercer tus derechos sobre datos personales.",
+        "Cómo contactar al equipo de MDQ Bondi: reportar un error en los horarios, consultar por publicidad o ejercer tus derechos sobre datos personales.",
     alternates: {
         canonical: "/contacto",
     },
     openGraph: {
         type: "website",
         locale: "es_AR",
-        url: "https://bondimdp.com.ar/contacto",
-        title: "Contacto | Bondi MDP",
+        url: "https://mdqbondi.com.ar/contacto",
+        title: "Contacto | MDQ Bondi",
         description:
-            "Cómo contactar al equipo de Bondi MDP: reportar un error, consultar por publicidad o ejercer tus derechos sobre datos personales.",
-        siteName: "Bondi MDP",
+            "Cómo contactar al equipo de MDQ Bondi: reportar un error, consultar por publicidad o ejercer tus derechos sobre datos personales.",
+        siteName: "MDQ Bondi",
         images: ["/opengraph-image"],
     },
     robots: {
@@ -41,13 +41,13 @@ const breadcrumbJsonLd = {
             "@type": "ListItem",
             position: 1,
             name: "Inicio",
-            item: "https://bondimdp.com.ar",
+            item: "https://mdqbondi.com.ar",
         },
         {
             "@type": "ListItem",
             position: 2,
             name: "Contacto",
-            item: "https://bondimdp.com.ar/contacto",
+            item: "https://mdqbondi.com.ar/contacto",
         },
     ],
 };
@@ -109,7 +109,7 @@ export default function ContactoPage() {
                             Contacto
                         </h1>
                         <p className="mx-auto max-w-sm text-[13px] leading-relaxed text-muted-foreground">
-                            Bondi MDP es un proyecto independiente y de código abierto
+                            MDQ Bondi es un proyecto independiente y de código abierto
                             hecho en Mar del Plata, Argentina. No es una app oficial de
                             la Municipalidad de General Pueyrredón, sino una alternativa
                             comunitaria que consume los mismos datos municipales.
@@ -178,7 +178,7 @@ export default function ContactoPage() {
 
                     <Section title="Quiénes somos">
                         <p>
-                            Bondi MDP lo desarrollan y mantienen{" "}
+                            MDQ Bondi lo desarrollan y mantienen{" "}
                             <ExtLink href="https://dotfn.dev">Nicolás Jiménez</ExtLink> y{" "}
                             <ExtLink href="https://celizin.dev">
                                 Matias Celiz Ramos

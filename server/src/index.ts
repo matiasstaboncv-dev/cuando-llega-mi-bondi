@@ -18,11 +18,11 @@ app.use(logger());
 app.use(secureHeaders());
 
 // Acepta orígenes en ALLOWED_ORIGINS, cualquier *.vercel.app (preview deploys
-// cambian de URL en cada push) y cualquier *.bondimdp.com.ar / bondimdp.com.ar
+// cambian de URL en cada push) y cualquier *.mdqbondi.com.ar / mdqbondi.com.ar
 // (prod + staging + futuros subdominios sin sincronizar a mano).
 const ALLOWED_HOST_RES = [
     /^https:\/\/[a-z0-9.-]+\.vercel\.app$/i,
-    /^https:\/\/(?:[a-z0-9-]+\.)*bondimdp\.com\.ar$/i,
+    /^https:\/\/(?:[a-z0-9-]+\.)*mdqbondi\.com\.ar$/i,
 ];
 function isAllowedOrigin(origin: string | undefined): boolean {
     if (!origin) return false;

@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
     title: "Página no encontrada",
     description:
-        "La página que buscás no existe. Volvé al inicio de Bondi MDP para consultar colectivos en Mar del Plata.",
+        "La página que buscás no existe. Volvé al inicio de MDQ Bondi para consultar colectivos en Mar del Plata.",
 };
 
 const links = [
@@ -97,7 +97,7 @@ export default function NotFound() {
                                 "@type": "ListItem",
                                 position: 1,
                                 name: "Inicio",
-                                item: "https://bondimdp.com.ar",
+                                item: "https://mdqbondi.com.ar",
                             },
                         ],
                     }),

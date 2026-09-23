@@ -5,16 +5,16 @@ import { AnunciateClient } from "@features/sponsors/components/AnunciateClient";
 export const metadata: Metadata = {
   title: "Anunciate",
   description:
-    "Comprá un lugar publicitario en Bondi MDP. Se publican los dos que más pagaron en Consultar. No hay garantía de visitas ni ventas.",
+    "Comprá un lugar publicitario en MDQ Bondi. Se publican los dos que más pagaron en Consultar. No hay garantía de visitas ni ventas.",
   alternates: { canonical: "/anunciate" },
   openGraph: {
     type: "website",
     locale: "es_AR",
-    url: "https://bondimdp.com.ar/anunciate",
-    title: "Anunciate | Bondi MDP",
+    url: "https://mdqbondi.com.ar/anunciate",
+    title: "Anunciate | MDQ Bondi",
     description:
-      "Comprá un lugar publicitario en Bondi MDP. Se publican los dos que más pagaron en Consultar. No hay garantía de visitas ni ventas.",
-    siteName: "Bondi MDP",
+      "Comprá un lugar publicitario en MDQ Bondi. Se publican los dos que más pagaron en Consultar. No hay garantía de visitas ni ventas.",
+    siteName: "MDQ Bondi",
     images: ["/opengraph-image"],
   },
 };

@@ -52,11 +52,11 @@ export function LineDetailScreen({
 
     const handleShare = useCallback(async () => {
         const url = `${window.location.origin}/recorrido/${lineaToSlug(line.Descripcion)}`;
-        const text = `¿Viajaste en la línea ${numero}? Contá cómo te fue y ayudá a otros pasajeros en Bondi MDP.`;
+        const text = `¿Viajaste en la línea ${numero}? Contá cómo te fue y ayudá a otros pasajeros en MDQ Bondi.`;
 
         if (navigator.share) {
             try {
-                await navigator.share({ title: `Línea ${numero} — Bondi MDP`, text, url });
+                await navigator.share({ title: `Línea ${numero} — MDQ Bondi`, text, url });
                 setShareStatus("shared");
             } catch {
                 return; // el usuario canceló

@@ -28,7 +28,7 @@ const pressMentions = [
         source: "Mi 8",
         logo: { src: "/press-logos/mi8.png", width: 95, height: 64 },
         title:
-            "Bondi MDP, la app que se desarrolla como una alternativa a Cuándo Llega: “Mostramos los datos de una forma mucho más accesible”",
+            "MDQ Bondi, la app que se desarrolla como una alternativa a Cuándo Llega: “Mostramos los datos de una forma mucho más accesible”",
         link: "https://mi8.com.ar/bondi-mdp-la-app-que-se-desarrolla-como-una-alternativa-a-cuando-llega-mostramos-los-datos-de-una-forma-mucho-mas-accesible/",
     },
 ];

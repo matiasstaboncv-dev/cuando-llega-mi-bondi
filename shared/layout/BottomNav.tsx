@@ -107,8 +107,8 @@ function SideNav() {
             {/* En desktop la landing es accesible: el logo lleva a ella */}
             <Link
                 href="/"
-                aria-label="Bondi MDP — Ir a la página principal"
-                title="Bondi MDP"
+                aria-label="MDQ Bondi — Ir a la página principal"
+                title="MDQ Bondi"
                 className="flex h-16 shrink-0 items-center gap-2.5 px-5 text-foreground transition-opacity hover:opacity-80"
             >
                 <IconBus />

@@ -1,19 +1,19 @@
 
 export const metadata: Metadata = {
-    title: "Bondi MDP: estadísticas del primer mes — 19.267 usuarios en Mar del Plata",
-    description: "Bondi MDP, la app gratuita de colectivos en tiempo real para Mar del Plata, alcanzó 19.267 usuarios activos, 300.000 vistas y ratio de fidelidad 2:1 en su primer mes. Datos completos de adopción, cobertura y desempeño técnico.",
+    title: "MDQ Bondi: estadísticas del primer mes — 19.267 usuarios en Mar del Plata",
+    description: "MDQ Bondi, la app gratuita de colectivos en tiempo real para Mar del Plata, alcanzó 19.267 usuarios activos, 300.000 vistas y ratio de fidelidad 2:1 en su primer mes. Datos completos de adopción, cobertura y desempeño técnico.",
     keywords: [
-        "Bondi MDP",
+        "MDQ Bondi",
         "app colectivos Mar del Plata",
         "transporte público Mar del Plata",
         "cuándo llega el colectivo MDP",
         "app bondi tiempo real",
-        "estadísticas bondimdp",
+        "estadísticas mdqbondi",
         "informe mensual app transporte"
     ],
-    authors: [{ name: "Bondi MDP" }],
+    authors: [{ name: "MDQ Bondi" }],
     alternates: {
-        canonical: "https://bondimdp.com.ar/un-mes-en-numeros",
+        canonical: "https://mdqbondi.com.ar/un-mes-en-numeros",
     },
     other: {
         "geo.region": "AR-B",
@@ -23,10 +23,10 @@ export const metadata: Metadata = {
     },
     openGraph: {
         type: "article",
-        title: "Bondi MDP: estadísticas del primer mes — 19.267 usuarios en Mar del Plata",
+        title: "MDQ Bondi: estadísticas del primer mes — 19.267 usuarios en Mar del Plata",
         description: "19.267 usuarios activos, 300.000 vistas y ratio de fidelidad 2:1 en 30 días. Sin campañas pagas. Solo la app y el boca a boca marplatense.",
-        url: "https://bondimdp.com.ar/un-mes-en-numeros",
-        siteName: "Bondi MDP",
+        url: "https://mdqbondi.com.ar/un-mes-en-numeros",
+        siteName: "MDQ Bondi",
         locale: "es_AR",
         publishedTime: "2026-05-28T09:00:00-03:00",
         modifiedTime: "2026-05-28T09:00:00-03:00",
@@ -35,8 +35,8 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        site: "@bondimdp",
-        title: "Bondi MDP: estadísticas del primer mes — 19.267 usuarios en Mar del Plata",
+        site: "@mdqbondi",
+        title: "MDQ Bondi: estadísticas del primer mes — 19.267 usuarios en Mar del Plata",
         description: "19.267 usuarios activos, 300.000 vistas, ratio 2:1. Un mes de datos de la app de colectivos en tiempo real de Mar del Plata.",
     },
 };
@@ -51,7 +51,7 @@ export const instant = false;
 const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "Bondi MDP: estadísticas del primer mes — 19.267 usuarios en Mar del Plata",
+    headline: "MDQ Bondi: estadísticas del primer mes — 19.267 usuarios en Mar del Plata",
     description:
         "19.267 usuarios activos, 300.000 vistas y ratio de fidelidad 2:1 en 30 días para la app de colectivos en tiempo real de Mar del Plata.",
     datePublished: "2026-05-28T09:00:00-03:00",
@@ -62,17 +62,17 @@ const articleJsonLd = {
     ],
     publisher: {
         "@type": "Organization",
-        name: "Bondi MDP",
+        name: "MDQ Bondi",
         logo: {
             "@type": "ImageObject",
-            url: "https://bondimdp.com.ar/icon-512x512.png",
+            url: "https://mdqbondi.com.ar/icon-512x512.png",
         },
     },
     mainEntityOfPage: {
         "@type": "WebPage",
-        "@id": "https://bondimdp.com.ar/un-mes-en-numeros",
+        "@id": "https://mdqbondi.com.ar/un-mes-en-numeros",
     },
-    image: "https://bondimdp.com.ar/og/estadisticas-1-mes.jpg",
+    image: "https://mdqbondi.com.ar/og/estadisticas-1-mes.jpg",
 };
 
 export default function Page() {

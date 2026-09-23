@@ -102,7 +102,7 @@ export function StepConfirm({
             Pagás para que se publique tu link, rotulado como publicidad. No
             hay visitas mínimas, clics, clientes ni ventas aseguradas. El
             lugar es tuyo mientras sigas entre los dos que más pusieron.
-            Bondi MDP no revisa ni recomienda lo que aparezca.
+            MDQ Bondi no revisa ni recomienda lo que aparezca.
           </p>
         </motion.div>
       </div>

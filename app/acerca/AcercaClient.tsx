@@ -196,7 +196,7 @@ export function AcercaClient() {
 
     const handleShareWhatsApp = useCallback(() => {
         const text = encodeURIComponent(
-            "Mirá esta app para ver cuándo llega el bondi en Mar del Plata 🚌 https://bondimdp.com.ar",
+            "Mirá esta app para ver cuándo llega el bondi en Mar del Plata 🚌 https://mdqbondi.com.ar",
         );
         window.open(`https://wa.me/?text=${text}`, "_blank", "noopener");
     }, []);
@@ -205,9 +205,9 @@ export function AcercaClient() {
         if (navigator.share) {
             try {
                 await navigator.share({
-                    title: "Bondi MDP",
+                    title: "MDQ Bondi",
                     text: "Consultá cuándo llega tu colectivo en Mar del Plata",
-                    url: "https://bondimdp.com.ar",
+                    url: "https://mdqbondi.com.ar",
                 });
             } catch {
                 /* user cancelled */
@@ -222,7 +222,7 @@ export function AcercaClient() {
             <PageShell wide className="space-y-10 lg:space-y-6">
                 <PageHeader
                     title="Acerca de"
-                    highlight="Bondi MDP"
+                    highlight="MDQ Bondi"
                     subtitle="El proyecto y el equipo"
                 />
                 {/* Desktop: rail izquierdo sticky (marca + compartir) y contenido
@@ -398,7 +398,7 @@ export function AcercaClient() {
                                 Comparativas y guías
                             </p>
                             <p className="text-[12px] text-muted-foreground opacity-80">
-                                Bondi MDP vs. la app oficial, y cómo saber cuándo llega el colectivo
+                                MDQ Bondi vs. la app oficial, y cómo saber cuándo llega el colectivo
                             </p>
                         </div>
                         <svg

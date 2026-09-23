@@ -6,9 +6,9 @@ export function BondiVsCuandoLlegaArticle() {
             <p>
                 Si buscaste &ldquo;cuándo llega el colectivo en Mar del Plata&rdquo;, seguramente te
                 cruzaste con dos nombres: la app oficial <strong>&ldquo;Cuándo Llega&rdquo;</strong> de
-                la Municipalidad y <strong>Bondi MDP</strong>. Las dos muestran el arribo en tiempo real
+                la Municipalidad y <strong>MDQ Bondi</strong>. Las dos muestran el arribo en tiempo real
                 de las líneas de colectivo de la ciudad, pero no son lo mismo. Esta es una comparación
-                directa, sin vueltas, hecha por el equipo que desarrolla Bondi MDP.
+                directa, sin vueltas, hecha por el equipo que desarrolla MDQ Bondi.
             </p>
 
             <h2>Qué es &ldquo;Cuándo Llega&rdquo;</h2>
@@ -18,7 +18,7 @@ export function BondiVsCuandoLlegaArticle() {
                 misma fuente de datos GPS que alimenta al resto de las herramientas de la ciudad.
             </p>
 
-            <h2>Qué es Bondi MDP</h2>
+            <h2>Qué es MDQ Bondi</h2>
             <p>
                 Es una Progressive Web App (PWA) gratuita e independiente, sin afiliación con la
                 Municipalidad, hecha por dos desarrolladores marplatenses. Nació como respuesta de la
@@ -37,25 +37,25 @@ export function BondiVsCuandoLlegaArticle() {
 
             <h3>Instalación</h3>
             <p>
-                &ldquo;Cuándo Llega&rdquo; requiere descargarla desde Google Play o App Store. Bondi MDP
+                &ldquo;Cuándo Llega&rdquo; requiere descargarla desde Google Play o App Store. MDQ Bondi
                 es una PWA: se instala directo desde el navegador (o se usa sin instalar nada), sin pasar
                 por ninguna tienda de aplicaciones.
             </p>
 
             <h3>Registro</h3>
             <p>
-                Bondi MDP no pide cuenta ni registro para usarse. Abrís el sitio y consultás.
+                MDQ Bondi no pide cuenta ni registro para usarse. Abrís el sitio y consultás.
             </p>
 
             <h3>Cobertura de líneas</h3>
             <p>
-                Bondi MDP suma la línea 221 (Costa Azul) mediante un trazado manual propio, ya que esa
+                MDQ Bondi suma la línea 221 (Costa Azul) mediante un trazado manual propio, ya que esa
                 línea no forma parte de la API oficial de la MGP.
             </p>
 
             <h3>Código</h3>
             <p>
-                Bondi MDP es{" "}
+                MDQ Bondi es{" "}
                 <a
                     href="https://github.com/cuando-llega-mi-bondi/cuando-llega-mi-bondi"
                     target="_blank"
@@ -66,7 +66,7 @@ export function BondiVsCuandoLlegaArticle() {
                 : cualquiera puede revisar cómo funciona o proponer una mejora.
             </p>
 
-            <h2>Quién hizo Bondi MDP</h2>
+            <h2>Quién hizo MDQ Bondi</h2>
             <p>
                 Nicolás Jiménez y Matias Celiz Ramos, dos desarrolladores de Mar del Plata. El lanzamiento
                 fue cubierto por Diario La Capital de Mar del Plata y Mi8, que la describieron como
@@ -78,12 +78,12 @@ export function BondiVsCuandoLlegaArticle() {
             <p>
                 Las dos hacen el trabajo con los mismos datos oficiales. Si ya tenés &ldquo;Cuándo
                 Llega&rdquo; instalada y te sirve, no hay ningún motivo para cambiar. Si preferís no
-                instalar una app de tienda, no querés crear cuenta, o tomás la línea 221, Bondi MDP te
+                instalar una app de tienda, no querés crear cuenta, o tomás la línea 221, MDQ Bondi te
                 puede resultar más cómoda. Probá las dos y quedate con la que mejor te funcione.
             </p>
 
             <p>
-                <Link href="/consultar">Consultá tu colectivo ahora en Bondi MDP →</Link>
+                <Link href="/consultar">Consultá tu colectivo ahora en MDQ Bondi →</Link>
             </p>
         </>
     );

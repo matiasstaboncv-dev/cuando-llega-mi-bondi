@@ -68,7 +68,7 @@ export function LandingStats() {
           aria-hidden
           className="mr-1.5 hidden h-4 w-4 -translate-y-0.5 align-middle text-amarillo sm:inline"
         />
-        Lanzamos Bondi MDP{" "}
+        Lanzamos MDQ Bondi{" "}
         <span className="font-semibold text-foreground">
           sin un peso en publicidad
         </span>

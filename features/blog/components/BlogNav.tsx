@@ -6,8 +6,8 @@ export function BlogNav() {
         <nav className="sticky top-0 z-[100] border-b border-border bg-background/88 px-6 backdrop-blur-md">
             <div className="mx-auto flex h-[58px] max-w-[880px] items-center justify-between">
                 <Link href="/" className="select-none text-lg font-bold italic tracking-tight">
-                    <span className="text-foreground">BONDI</span>
-                    <span className="text-primary">MDP</span>
+                    <span className="text-foreground">MDQ</span>
+                    <span className="text-primary">BONDI</span>
                 </Link>
                 <div className="flex items-center gap-6">
                     <Link

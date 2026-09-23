@@ -10,7 +10,7 @@ export type RecentPlace = {
     lng: number;
 };
 
-const STORAGE_KEY = "bondimdp:como-llego:recientes";
+const STORAGE_KEY = "mdqbondi:como-llego:recientes";
 const MAX_RECENTS = 6;
 
 export function loadRecentPlaces(): RecentPlace[] {

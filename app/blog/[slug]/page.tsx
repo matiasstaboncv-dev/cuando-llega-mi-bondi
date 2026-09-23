@@ -11,7 +11,7 @@ import { formatFechaEs } from "@shared/utils";
 // See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
 export const instant = false;
 
-const BASE_URL = "https://bondimdp.com.ar";
+const BASE_URL = "https://mdqbondi.com.ar";
 
 export async function generateStaticParams() {
     return ARTICLES.map((a) => ({ slug: a.slug }));
@@ -27,7 +27,7 @@ export async function generateMetadata({
     if (!article) return {};
 
     return {
-        title: { absolute: `${article.title} — Bondi MDP` },
+        title: { absolute: `${article.title} — MDQ Bondi` },
         description: article.description,
         keywords: article.tags,
         alternates: {
@@ -39,7 +39,7 @@ export async function generateMetadata({
             url: `${BASE_URL}/blog/${slug}`,
             title: article.title,
             description: article.description,
-            siteName: "Bondi MDP",
+            siteName: "MDQ Bondi",
             publishedTime: article.datePublished,
             modifiedTime: article.dateModified,
             section: article.section,
@@ -47,7 +47,7 @@ export async function generateMetadata({
         },
         twitter: {
             card: "summary_large_image",
-            site: "@bondimdp",
+            site: "@mdqbondi",
             title: article.title,
             description: article.description,
         },
@@ -88,7 +88,7 @@ export default async function BlogArticlePage({
         ],
         publisher: {
             "@type": "Organization",
-            name: "Bondi MDP",
+            name: "MDQ Bondi",
             logo: { "@type": "ImageObject", url: `${BASE_URL}/icon-512x512.png` },
         },
         mainEntityOfPage: { "@type": "WebPage", "@id": `${BASE_URL}/blog/${slug}` },

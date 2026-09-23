@@ -11,14 +11,14 @@ export const instant = false;
 
 export const metadata: Metadata = {
     title: {
-        absolute: "Paradas de colectivo cerca tuyo — Bondi MDP",
+        absolute: "Paradas de colectivo cerca tuyo — MDQ Bondi",
     },
     description:
         "Encontrá las paradas de colectivo más cercanas a tu ubicación en Mar del Plata, vistas en el mapa, y consultá qué líneas pasan por cada una.",
     keywords: [
         "paradas de colectivo cerca",
         "paradas cercanas mar del plata",
-        "mapa paradas bondi mdp",
+        "mapa paradas mdq bondi",
         "qué colectivo pasa cerca mío",
         "parada de bondi más cercana",
         "paradas colectivo cerca de mi ubicación",
@@ -30,16 +30,16 @@ export const metadata: Metadata = {
     openGraph: {
         type: "website",
         locale: "es_AR",
-        url: "https://bondimdp.com.ar/paradas-cerca",
-        title: "Paradas de colectivo cerca tuyo — Bondi MDP",
+        url: "https://mdqbondi.com.ar/paradas-cerca",
+        title: "Paradas de colectivo cerca tuyo — MDQ Bondi",
         description:
             "Mirá en el mapa las paradas de colectivo más cercanas a vos en Mar del Plata y qué líneas pasan por cada una.",
-        siteName: "Bondi MDP",
+        siteName: "MDQ Bondi",
         images: ["/opengraph-image"],
     },
     twitter: {
         card: "summary",
-        title: "Paradas de colectivo cerca tuyo — Bondi MDP",
+        title: "Paradas de colectivo cerca tuyo — MDQ Bondi",
         description:
             "Las paradas de colectivo más cercanas a tu ubicación en Mar del Plata, en el mapa.",
     },
@@ -53,13 +53,13 @@ const breadcrumbJsonLd = {
             "@type": "ListItem",
             position: 1,
             name: "Inicio",
-            item: "https://bondimdp.com.ar",
+            item: "https://mdqbondi.com.ar",
         },
         {
             "@type": "ListItem",
             position: 2,
             name: "Paradas cerca mío",
-            item: "https://bondimdp.com.ar/paradas-cerca",
+            item: "https://mdqbondi.com.ar/paradas-cerca",
         },
     ],
 };

@@ -14,12 +14,12 @@ export function ThemeColorMeta() {
         if (!resolvedTheme) return;
         const color = resolvedTheme === "dark" ? THEME_COLOR_DARK : THEME_COLOR_LIGHT;
         let meta = document.querySelector(
-            'meta[name="theme-color"][data-bondimdp-resolved="true"]'
+            'meta[name="theme-color"][data-mdqbondi-resolved="true"]'
         ) as HTMLMetaElement | null;
         if (!meta) {
             meta = document.createElement("meta");
             meta.name = "theme-color";
-            meta.setAttribute("data-bondimdp-resolved", "true");
+            meta.setAttribute("data-mdqbondi-resolved", "true");
             document.head.appendChild(meta);
         }
         meta.content = color;

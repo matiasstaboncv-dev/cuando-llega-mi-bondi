@@ -1,6 +1,6 @@
 {
-  "name": "Bondi MDP — Colectivos en Tiempo Real",
-  "short_name": "Bondi MDP",
+  "name": "MDQ Bondi — Colectivos en Tiempo Real",
+  "short_name": "MDQ Bondi",
   "description": "Consultá en tiempo real el arribo de colectivos en Mar del Plata. Datos oficiales de MGP con la mejor interfaz.",
   "start_url": "/",
   "display": "standalone",

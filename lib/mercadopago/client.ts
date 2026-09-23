@@ -35,7 +35,7 @@ export async function createAdPreference({
       items: [
         {
           id: "consultar-ad-slot",
-          title: `Publicidad en Bondi MDP: ${title}`.slice(0, 250),
+          title: `Publicidad en MDQ Bondi: ${title}`.slice(0, 250),
           quantity: 1,
           unit_price: amountArs,
           currency_id: "ARS",
@@ -50,7 +50,7 @@ export async function createAdPreference({
       ...(baseUrl.startsWith("https") ? { auto_return: "approved" as const } : {}),
       external_reference: purchaseId,
       notification_url: `${baseUrl}/api/webhooks/mercadopago`,
-      statement_descriptor: "BONDI MDP",
+      statement_descriptor: "MDQ BONDI",
       expires: true,
       expiration_date_from: new Date().toISOString(),
       expiration_date_to: new Date(Date.now() + 30 * 60 * 1000).toISOString(),

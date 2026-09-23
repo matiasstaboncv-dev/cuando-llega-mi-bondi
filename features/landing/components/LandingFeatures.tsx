@@ -26,7 +26,7 @@ export function LandingFeatures() {
     <LandingSection
       eyebrow="Funciones"
       title="¿Por qué usar"
-      highlight="Bondi MDP?"
+      highlight="MDQ Bondi?"
       description="La forma más simple de consultar cuándo llega tu colectivo."
     >
       <div className="grid gap-6 lg:grid-cols-5">

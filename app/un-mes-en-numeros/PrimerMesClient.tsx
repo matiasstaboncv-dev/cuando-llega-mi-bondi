@@ -369,8 +369,8 @@ export default function PrimerMesClient() {
             <nav className="sticky top-0 z-[100] bg-background/88 backdrop-blur-md border-b border-border px-6">
                 <div className="max-w-[880px] mx-auto h-[58px] flex items-center justify-between">
                     <Link href="/" className="font-bold italic text-lg tracking-tight select-none">
-                        <span className="text-foreground">BONDI</span>
-                        <span className="text-primary">MDP</span>
+                        <span className="text-foreground">MDQ</span>
+                        <span className="text-primary">BONDI</span>
                     </Link>
                     <div className="flex items-center gap-6">
                         <Link href="/blog" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
@@ -422,13 +422,13 @@ export default function PrimerMesClient() {
                         <span>5 min de lectura</span>
                     </div>
                     <h1 className="font-display font-extrabold text-3xl sm:text-5xl text-foreground leading-[1.08] tracking-tight mb-5 max-w-2xl">
-                        Bondi MDP: un mes en números —
+                        MDQ Bondi: un mes en números —
                         <br />
                         <span className="text-primary">cómo creció la app de colectivos</span>
                     </h1>
                     <p className="text-base sm:text-lg text-muted-foreground max-w-2xl leading-relaxed">
                         <strong className="font-semibold">
-                            Bondi MDP es una aplicación web progresiva (PWA) gratuita que permite a los vecinos de Mar
+                            MDQ Bondi es una aplicación web progresiva (PWA) gratuita que permite a los vecinos de Mar
                             del Plata, Argentina, consultar en tiempo real cuándo llega el próximo colectivo.
                         </strong>{" "}
                         Fue lanzada el 29 de abril de 2026. Treinta días después, los datos hablan por sí solos:
@@ -493,7 +493,7 @@ export default function PrimerMesClient() {
             <section className="bg-muted border-b border-border py-8 px-6" aria-label="Cobertura periodística">
                 <div className="max-w-[880px] mx-auto">
                     <p className="text-[11px] font-bold tracking-widest text-muted-foreground uppercase text-center mb-5">
-                        Hablan de Bondi MDP
+                        Hablan de MDQ Bondi
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 
@@ -501,7 +501,7 @@ export default function PrimerMesClient() {
                             <div className="inline-block text-[11px] font-bold tracking-wider text-primary bg-primary/12 border border-primary/25 rounded px-2 py-0.5 mb-3">
                                 Diario La Capital · 30 abr 2026
                             </div>
-                            <p className="text-sm font-medium text-foreground mb-3 italic">&ldquo;Lanzaron &apos;Bondi MDP&apos;, la alternativa a la aplicación &apos;Cuándo Llega&apos; para usuarios de colectivos&rdquo;</p>
+                            <p className="text-sm font-medium text-foreground mb-3 italic">&ldquo;Lanzaron &apos;MDQ Bondi&apos;, la alternativa a la aplicación &apos;Cuándo Llega&apos; para usuarios de colectivos&rdquo;</p>
                             <p className="text-xs text-muted-foreground mb-4"><strong className="text-foreground font-semibold">3.955</strong> visitantes únicos generados &nbsp;·&nbsp; <strong className="text-foreground font-semibold">6.355</strong> sesiones totales</p>
                             <a
                                 href="https://www.lacapitalmdp.com/lanzaron-bondi-mdp-la-alternativa-a-la-aplicacion-cuando-llega-para-usuarios-de-colectivos/"
@@ -520,7 +520,7 @@ export default function PrimerMesClient() {
                             <div className="inline-block text-[11px] font-bold tracking-wider text-primary bg-primary/12 border border-primary/25 rounded px-2 py-0.5 mb-3">
                                 Noticias de Bariloche · 30 abr 2026
                             </div>
-                            <p className="text-sm font-medium text-foreground mb-3 italic">&ldquo;Lanzaron &apos;Bondi MDP&apos;, la alternativa a la aplicación &apos;Cuándo Llega&apos; para usuarios de colectivos · Diario La Capital de Mar del Plata&rdquo;</p>
+                            <p className="text-sm font-medium text-foreground mb-3 italic">&ldquo;Lanzaron &apos;MDQ Bondi&apos;, la alternativa a la aplicación &apos;Cuándo Llega&apos; para usuarios de colectivos · Diario La Capital de Mar del Plata&rdquo;</p>
                             <p className="text-xs text-muted-foreground mb-4">Replicado en medios digitales de alcance nacional</p>
                             <a
                                 href="https://www.noticiasdebariloche.com.ar"
@@ -554,7 +554,7 @@ export default function PrimerMesClient() {
                                 Contexto
                             </span>
                             <span className="text-xs text-muted-foreground uppercase tracking-wide">
-                                Por qué existe Bondi MDP
+                                Por qué existe MDQ Bondi
                             </span>
                         </div>
 
@@ -583,7 +583,7 @@ export default function PrimerMesClient() {
                                 <p>
                                     La respuesta llegó desde la propia comunidad tech local.{" "}
                                     <strong className="text-foreground font-semibold">
-                                        Bondi MDP nació como un proyecto de código abierto
+                                        MDQ Bondi nació como un proyecto de código abierto
                                     </strong>
                                     : sin fines de lucro y sin registro. Una PWA
                                     accesible desde cualquier navegador, sin necesidad de instalación, construida por
@@ -687,7 +687,7 @@ export default function PrimerMesClient() {
                                     <div>
                                         <p className="text-xs font-semibold text-foreground mb-0.5">PWA: sin fricciones</p>
                                         <p className="text-xs text-muted-foreground leading-normal">
-                                            Disponible en bondimdp.com.ar desde cualquier navegador. Sin instalación.
+                                            Disponible en mdqbondi.com.ar desde cualquier navegador. Sin instalación.
                                             Gratis.
                                         </p>
                                     </div>
@@ -714,14 +714,14 @@ export default function PrimerMesClient() {
                         <h2 id="adopcion-h2" className="font-display font-bold text-2xl sm:text-3xl text-foreground mb-6 leading-tight">
                             19.267 marplatenses eligieron
                             <br />
-                            Bondi MDP en su <span className="text-primary">primer mes</span>
+                            MDQ Bondi en su <span className="text-primary">primer mes</span>
                         </h2>
 
 
                         <div className="text-sm sm:text-base text-muted-foreground space-y-4 leading-relaxed max-w-[660px] mb-8">
 
                             <p>
-                                En su primer mes de operación (29 de abril al 27 de mayo de 2026), Bondi MDP registró
+                                En su primer mes de operación (29 de abril al 27 de mayo de 2026), MDQ Bondi registró
                                 <strong className="text-foreground font-semibold"> 19.267 usuarios activos únicos</strong>{" "}
                                 en la ciudad de Mar del Plata. No es un número de descargas: es la cantidad de personas
                                 que abrieron la app al menos una vez para saber cuándo llegaba su colectivo.
@@ -967,7 +967,7 @@ export default function PrimerMesClient() {
                             <div className="md:col-span-3 text-sm sm:text-base text-muted-foreground space-y-4 leading-relaxed">
 
                                 <p>
-                                    Bondi MDP tiene una función para que los pasajeros compartan la ubicación de su
+                                    MDQ Bondi tiene una función para que los pasajeros compartan la ubicación de su
                                     colectivo en tiempo real. Cuando alguien activa esa función, su posición se usa
                                     para que otros usuarios vean dónde está realmente el micro, no solo dónde debería
                                     estar según el sistema.
@@ -1346,7 +1346,7 @@ export default function PrimerMesClient() {
                         <h2 id="faq-h2" className="font-display font-bold text-2xl sm:text-3xl text-foreground mb-6 leading-tight">
                             Lo que la gente pregunta sobre
                             <br />
-                            <span className="text-primary">Bondi MDP</span>
+                            <span className="text-primary">MDQ Bondi</span>
                         </h2>
 
 
@@ -1354,17 +1354,17 @@ export default function PrimerMesClient() {
 
                             <details className="group py-4.5 cursor-pointer" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
                                 <summary className="flex justify-between items-center text-sm sm:text-base font-semibold text-foreground list-none outline-none group-open:text-primary transition-colors" itemProp="name">
-                                    ¿Qué es Bondi MDP?
+                                    ¿Qué es MDQ Bondi?
                                     <span className="text-lg text-primary font-light transition-transform duration-200 group-open:rotate-45 flex-shrink-0 ml-4">
                                         +
                                     </span>
                                 </summary>
                                 <div className="mt-3 text-xs sm:text-sm text-muted-foreground leading-relaxed max-w-[720px]" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
                                     <p itemProp="text">
-                                        Bondi MDP es una aplicación web progresiva (PWA) gratuita para Mar del Plata,
+                                        MDQ Bondi es una aplicación web progresiva (PWA) gratuita para Mar del Plata,
                                         Argentina, que permite consultar en tiempo real cuándo llega el próximo
                                         colectivo a cualquier parada de la ciudad. No requiere descarga ni registro, y
-                                        está disponible en bondimdp.com.ar desde cualquier navegador.
+                                        está disponible en mdqbondi.com.ar desde cualquier navegador.
                                     </p>
                                 </div>
                             </details>
@@ -1373,14 +1373,14 @@ export default function PrimerMesClient() {
 
                             <details className="group py-4.5 cursor-pointer" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
                                 <summary className="flex justify-between items-center text-sm sm:text-base font-semibold text-foreground list-none outline-none group-open:text-primary transition-colors" itemProp="name">
-                                    ¿Cuántos usuarios tiene Bondi MDP?
+                                    ¿Cuántos usuarios tiene MDQ Bondi?
                                     <span className="text-lg text-primary font-light transition-transform duration-200 group-open:rotate-45 flex-shrink-0 ml-4">
                                         +
                                     </span>
                                 </summary>
                                 <div className="mt-3 text-xs sm:text-sm text-muted-foreground leading-relaxed max-w-[720px]" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
                                     <p itemProp="text">
-                                        En su primer mes de operación (29 de abril al 27 de mayo de 2026), Bondi MDP
+                                        En su primer mes de operación (29 de abril al 27 de mayo de 2026), MDQ Bondi
                                         registró 19.267 usuarios activos únicos, 87.784 sesiones totales y aproximadamente
                                         300.000 vistas de página. El 91% del tráfico proviene del Partido de General
                                         Pueyrredón (Mar del Plata y alrededores).
@@ -1392,16 +1392,16 @@ export default function PrimerMesClient() {
 
                             <details className="group py-4.5 cursor-pointer" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
                                 <summary className="flex justify-between items-center text-sm sm:text-base font-semibold text-foreground list-none outline-none group-open:text-primary transition-colors" itemProp="name">
-                                    ¿Es gratuita Bondi MDP?
+                                    ¿Es gratuita MDQ Bondi?
                                     <span className="text-lg text-primary font-light transition-transform duration-200 group-open:rotate-45 flex-shrink-0 ml-4">
                                         +
                                     </span>
                                 </summary>
                                 <div className="mt-3 text-xs sm:text-sm text-muted-foreground leading-relaxed max-w-[720px]" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
                                     <p itemProp="text">
-                                        Sí. Bondi MDP es completamente gratuita, sin registro y sin
+                                        Sí. MDQ Bondi es completamente gratuita, sin registro y sin
                                         suscripción de ningún tipo; se sostiene con publicidad no intrusiva. El servicio se accede directamente desde el navegador en
-                                        bondimdp.com.ar.
+                                        mdqbondi.com.ar.
                                     </p>
                                 </div>
                             </details>
@@ -1410,14 +1410,14 @@ export default function PrimerMesClient() {
 
                             <details className="group py-4.5 cursor-pointer" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
                                 <summary className="flex justify-between items-center text-sm sm:text-base font-semibold text-foreground list-none outline-none group-open:text-primary transition-colors" itemProp="name">
-                                    ¿Cómo funciona el tiempo real en Bondi MDP?
+                                    ¿Cómo funciona el tiempo real en MDQ Bondi?
                                     <span className="text-lg text-primary font-light transition-transform duration-200 group-open:rotate-45 flex-shrink-0 ml-4">
                                         +
                                     </span>
                                 </summary>
                                 <div className="mt-3 text-xs sm:text-sm text-muted-foreground leading-relaxed max-w-[720px]" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
                                     <p itemProp="text">
-                                        Bondi MDP combina datos oficiales del sistema de transporte con información
+                                        MDQ Bondi combina datos oficiales del sistema de transporte con información
                                         aportada voluntariamente por los pasajeros. En su primer mes, 425 usuarios
                                         compartieron la ubicación GPS de su colectivo de forma voluntaria y sin incentivos,
                                         contribuyendo a mejorar la precisión de los tiempos de arribo para toda la comunidad.
@@ -1436,7 +1436,7 @@ export default function PrimerMesClient() {
                                 </summary>
                                 <div className="mt-3 text-xs sm:text-sm text-muted-foreground leading-relaxed max-w-[720px]" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
                                     <p itemProp="text">
-                                        Bondi MDP tiene un LCP de 1.94 segundos y un CLS de 0.001, ambos calificados como
+                                        MDQ Bondi tiene un LCP de 1.94 segundos y un CLS de 0.001, ambos calificados como
                                         &ldquo;Excelente&rdquo; por los Core Web Vitals de Google (umbrales: LCP &lt; 2.5s,
                                         CLS &lt; 0.1). La app operó sin interrupciones durante su primer mes completo de
                                         producción, soportando un promedio de 10.000 vistas por día.
@@ -1448,14 +1448,14 @@ export default function PrimerMesClient() {
 
                             <details className="group py-4.5 cursor-pointer" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
                                 <summary className="flex justify-between items-center text-sm sm:text-base font-semibold text-foreground list-none outline-none group-open:text-primary transition-colors" itemProp="name">
-                                    ¿Cuándo se lanzó Bondi MDP?
+                                    ¿Cuándo se lanzó MDQ Bondi?
                                     <span className="text-lg text-primary font-light transition-transform duration-200 group-open:rotate-45 flex-shrink-0 ml-4">
                                         +
                                     </span>
                                 </summary>
                                 <div className="mt-3 text-xs sm:text-sm text-muted-foreground leading-relaxed max-w-[720px]" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
                                     <p itemProp="text">
-                                        Bondi MDP fue lanzado el 29 de abril de 2026 para el público general de Mar del
+                                        MDQ Bondi fue lanzado el 29 de abril de 2026 para el público general de Mar del
                                         Plata. Su lanzamiento fue cubierto por el Diario La Capital, el medio gráfico de
                                         mayor circulación de la ciudad.
                                     </p>
@@ -1477,7 +1477,7 @@ export default function PrimerMesClient() {
                             Un mes fue solo el arranque.
                         </h2>
                         <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-8">
-                            Bondi MDP va a seguir creciendo mientras más marplatenses puedan consultar sus colectivos en
+                            MDQ Bondi va a seguir creciendo mientras más marplatenses puedan consultar sus colectivos en
                             tiempo real. Próximos pasos: mejorar la precisión del mapa, sumar alertas personalizadas
                             de parada, y seguir construyendo junto a la comunidad que lo hace posible.
                         </p>
@@ -1498,8 +1498,8 @@ export default function PrimerMesClient() {
             <footer className="bg-muted py-10 px-6">
                 <div className="max-w-[880px] mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
                     <Link href="/" className="font-bold italic text-lg tracking-tight select-none">
-                        <span className="text-foreground">BONDI</span>
-                        <span className="text-primary">MDP</span>
+                        <span className="text-foreground">MDQ</span>
+                        <span className="text-primary">BONDI</span>
                     </Link>
                     <p className="text-xs text-muted-foreground">App gratuita de colectivos para Mar del Plata.</p>
                     <p className="text-[10px] text-[#3D5568] text-center md:text-right">

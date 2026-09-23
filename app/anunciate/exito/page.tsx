@@ -56,7 +56,7 @@ function PaymentResult() {
         {status === "approved" && wentLive ? (
           <div className="space-y-3">
             <p className="text-[18px] font-bold">
-              Ya estás en Bondi MDP{rank ? `, en el puesto ${rank}` : ""}.
+              Ya estás en MDQ Bondi{rank ? `, en el puesto ${rank}` : ""}.
             </p>
             <p className="text-[15px] text-muted-foreground">
               Tu link aparece en Consultar mientras sigas entre los dos que más

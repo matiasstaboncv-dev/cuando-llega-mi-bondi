@@ -67,7 +67,7 @@ export function HorariosVeranoArticle() {
 
             <h3>¿Hace falta descargar algo para consultarlo?</h3>
             <p>
-                No. Bondi MDP es una PWA gratuita que se usa directo desde el navegador, sin pasar por
+                No. MDQ Bondi es una PWA gratuita que se usa directo desde el navegador, sin pasar por
                 Google Play ni App Store. Se puede instalar en la pantalla de inicio si querés acceso más
                 rápido, pero no es obligatorio.
             </p>
@@ -80,7 +80,7 @@ export function HorariosVeranoArticle() {
 
             <p>
                 ¿Ya sabés qué línea tomar?{" "}
-                <Link href="/consultar">Consultá el próximo arribo en Bondi MDP →</Link>
+                <Link href="/consultar">Consultá el próximo arribo en MDQ Bondi →</Link>
             </p>
         </>
     );

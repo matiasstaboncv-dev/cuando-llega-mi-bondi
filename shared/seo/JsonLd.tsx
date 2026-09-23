@@ -1,20 +1,20 @@
 export function JsonLd() {
     const appBase = {
-        name: "Bondi MDP",
+        name: "MDQ Bondi",
         description:
             "App gratuita para consultar el tiempo de arribo de colectivos en Mar del Plata en tiempo real.",
         applicationCategory: "TravelApplication",
-        url: "https://bondimdp.com.ar",
+        url: "https://mdqbondi.com.ar",
         author: {
             "@type": "Organization",
-            name: "Bondi MDP Team",
+            name: "MDQ Bondi Team",
         },
         offers: {
             "@type": "Offer",
             price: "0",
             priceCurrency: "ARS",
         },
-        screenshot: "https://bondimdp.com.ar/screenshots/results.jpg",
+        screenshot: "https://mdqbondi.com.ar/screenshots/results.jpg",
         featureList: [
             "Tiempo real de arribos",
             "Recorridos completos",
@@ -37,14 +37,14 @@ export function JsonLd() {
     const organization = {
         "@context": "https://schema.org",
         "@type": "Organization",
-        "name": "Bondi MDP",
-        "url": "https://bondimdp.com.ar",
-        "logo": "https://bondimdp.com.ar/icon-512x512.png",
+        "name": "MDQ Bondi",
+        "url": "https://mdqbondi.com.ar",
+        "logo": "https://mdqbondi.com.ar/icon-512x512.png",
         "contactPoint": {
             "@type": "ContactPoint",
             "contactType": "customer support",
             "email": "maticelizramos@gmail.com",
-            "url": "https://bondimdp.com.ar/contacto",
+            "url": "https://mdqbondi.com.ar/contacto",
             "availableLanguage": ["Spanish", "English"],
         },
         "address": {
@@ -65,13 +65,13 @@ export function JsonLd() {
     const webSite = {
         "@context": "https://schema.org",
         "@type": "WebSite",
-        "name": "Bondi MDP",
-        "url": "https://bondimdp.com.ar",
+        "name": "MDQ Bondi",
+        "url": "https://mdqbondi.com.ar",
         "potentialAction": {
             "@type": "SearchAction",
             "target": {
                 "@type": "EntryPoint",
-                "urlTemplate": "https://bondimdp.com.ar/recorrido/{search_term_string}"
+                "urlTemplate": "https://mdqbondi.com.ar/recorrido/{search_term_string}"
             },
             "query-input": "required name=search_term_string"
         }

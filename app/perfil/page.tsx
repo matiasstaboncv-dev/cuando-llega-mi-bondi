@@ -7,7 +7,7 @@ export const instant = false;
 
 export const metadata = {
     title: "Tu cuenta",
-    description: "Cerrá sesión o eliminá tu cuenta de Bondi MDP.",
+    description: "Cerrá sesión o eliminá tu cuenta de MDQ Bondi.",
     robots: { index: false, follow: true },
 };
 

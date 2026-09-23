@@ -17,9 +17,9 @@ export const ARTICLES: BlogArticle[] = [
     },
     {
         slug: "bondi-mdp-vs-cuando-llega",
-        title: "Bondi MDP vs. Cuándo Llega: comparativa de apps de colectivos en Mar del Plata",
+        title: "MDQ Bondi vs. Cuándo Llega: comparativa de apps de colectivos en Mar del Plata",
         description:
-            "Bondi MDP vs. la app oficial \"Cuándo Llega\": mismos datos en tiempo real, distinta instalación, registro, cobertura de líneas y código abierto.",
+            "MDQ Bondi vs. la app oficial \"Cuándo Llega\": mismos datos en tiempo real, distinta instalación, registro, cobertura de líneas y código abierto.",
         datePublished: "2026-08-27T09:00:00-03:00",
         dateModified: "2026-08-27T09:00:00-03:00",
         section: "Comparativas",
@@ -30,7 +30,7 @@ export const ARTICLES: BlogArticle[] = [
         slug: "como-saber-cuando-llega-el-colectivo-en-mar-del-plata",
         title: "Cómo saber cuándo llega el colectivo en Mar del Plata",
         description:
-            "Guía con todas las formas de consultar el arribo de colectivos en tiempo real en Mar del Plata: app oficial, Bondi MDP, recorridos, paradas cercanas y más.",
+            "Guía con todas las formas de consultar el arribo de colectivos en tiempo real en Mar del Plata: app oficial, MDQ Bondi, recorridos, paradas cercanas y más.",
         datePublished: "2026-08-27T09:00:00-03:00",
         dateModified: "2026-08-27T09:00:00-03:00",
         section: "Guías",
@@ -50,7 +50,7 @@ export function getArticle(slug: string): BlogArticle | undefined {
 export const REPORTS = [
     {
         slug: "primer-trimestre-en-numeros",
-        title: "Bondi MDP: el primer trimestre en números — 22.893 usuarios activos",
+        title: "MDQ Bondi: el primer trimestre en números — 22.893 usuarios activos",
         description:
             "22.893 usuarios activos, 763.000 vistas y una curva de uso que se acelera trimestre a trimestre. Sin campañas pagas. Solo la app y el boca a boca marplatense.",
         datePublished: "2026-08-27T09:00:00-03:00",
@@ -60,7 +60,7 @@ export const REPORTS = [
     },
     {
         slug: "un-mes-en-numeros",
-        title: "Bondi MDP: estadísticas del primer mes — 19.267 usuarios en Mar del Plata",
+        title: "MDQ Bondi: estadísticas del primer mes — 19.267 usuarios en Mar del Plata",
         description:
             "19.267 usuarios activos, 300.000 vistas y ratio de fidelidad 2:1 en 30 días. Sin campañas pagas. Solo la app y el boca a boca marplatense.",
         datePublished: "2026-05-28T09:00:00-03:00",

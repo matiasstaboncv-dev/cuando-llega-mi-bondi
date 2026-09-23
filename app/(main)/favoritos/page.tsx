@@ -7,7 +7,7 @@ export const instant = false;
 
 export const metadata = {
   title: "Favoritos",
-  description: "Tus paradas favoritas y recientes en Bondi MDP.",
+  description: "Tus paradas favoritas y recientes en MDQ Bondi.",
   // Pantalla personal (LocalStorage): sin contenido público que indexar
   robots: { index: false, follow: true },
 };

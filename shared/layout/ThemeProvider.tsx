@@ -8,7 +8,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
             attribute="class"
             defaultTheme="system"
             enableSystem
-            storageKey="bondimdp-theme"
+            storageKey="mdqbondi-theme"
         >
             {children}
         </NextThemesProvider>

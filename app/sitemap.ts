@@ -8,7 +8,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "use cache";
     cacheLife("hours");
 
-    const baseUrl = "https://bondimdp.com.ar";
+    const baseUrl = "https://mdqbondi.com.ar";
     const now = new Date();
 
     const staticRoutes: MetadataRoute.Sitemap = [

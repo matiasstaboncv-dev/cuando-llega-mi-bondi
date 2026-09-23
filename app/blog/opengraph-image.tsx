@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Blog — Bondi MDP";
+export const alt = "Blog — MDQ Bondi";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -50,8 +50,8 @@ export default async function OpenGraphImage() {
                         lineHeight: 1,
                     }}
                 >
-                    <span style={{ color: "#f0f4f8" }}>BONDI</span>
-                    <span style={{ color: "#f9cd4a" }}>MDP</span>
+                    <span style={{ color: "#f0f4f8" }}>MDQ</span>
+                    <span style={{ color: "#f9cd4a" }}>BONDI</span>
                 </div>
             </div>
         ),

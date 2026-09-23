@@ -24,16 +24,16 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-    metadataBase: new URL("https://bondimdp.com.ar"),
+    metadataBase: new URL("https://mdqbondi.com.ar"),
     title: {
-        default: "Bondi MDP — Cuándo llega tu colectivo en Mar del Plata",
-        template: "%s | Bondi MDP",
+        default: "MDQ Bondi — Cuándo llega tu colectivo en Mar del Plata",
+        template: "%s | MDQ Bondi",
     },
     description:
         "App gratuita para saber cuándo llega tu bondi en Mar del Plata. Horarios, recorridos y paradas en tiempo real de todas las líneas (511, 522, 541 y más) con datos MGP.",
     keywords: [
-        "bondimdp",
-        "bondi mdp",
+        "mdqbondi",
+        "mdq bondi",
         "app bondi mar del plata",
         "app colectivos mar del plata",
         "colectivos mar del plata",
@@ -57,23 +57,23 @@ export const metadata: Metadata = {
     openGraph: {
         type: "website",
         locale: "es_AR",
-        url: "https://bondimdp.com.ar",
-        title: "Bondi MDP — Cuándo llega tu colectivo en Mar del Plata",
+        url: "https://mdqbondi.com.ar",
+        title: "MDQ Bondi — Cuándo llega tu colectivo en Mar del Plata",
         description:
             "App gratuita para saber cuándo llega tu bondi en Mar del Plata. Datos oficiales de MGP en una interfaz rápida, instalable en el celular.",
-        siteName: "Bondi MDP",
+        siteName: "MDQ Bondi",
     },
     twitter: {
         card: "summary_large_image",
-        site: "@bondimdp",
-        title: "Bondi MDP — Cuándo llega tu colectivo en Mar del Plata",
+        site: "@mdqbondi",
+        title: "MDQ Bondi — Cuándo llega tu colectivo en Mar del Plata",
         description:
             "App gratuita de colectivos en tiempo real para Mar del Plata. No pierdas más tiempo esperando el bondi.",
     },
     appleWebApp: {
         capable: true,
         statusBarStyle: "black-translucent",
-        title: "Bondi MDP",
+        title: "MDQ Bondi",
     },
     verification: {
         google: [

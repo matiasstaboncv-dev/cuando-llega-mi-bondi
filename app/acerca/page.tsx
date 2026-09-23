@@ -7,26 +7,26 @@ export const instant = false;
 
 export const metadata: Metadata = {
     title: {
-        absolute: "¿Qué es Bondi MDP? La app de colectivos de Mar del Plata",
+        absolute: "¿Qué es MDQ Bondi? La app de colectivos de Mar del Plata",
     },
     description:
-        "Bondi MDP es la app gratuita para seguir el bondi en tiempo real en Mar del Plata. Conocé cómo funciona, quién la hace y cómo reportar problemas.",
+        "MDQ Bondi es la app gratuita para seguir el bondi en tiempo real en Mar del Plata. Conocé cómo funciona, quién la hace y cómo reportar problemas.",
     alternates: {
         canonical: "/acerca",
     },
     openGraph: {
         type: "website",
         locale: "es_AR",
-        url: "https://bondimdp.com.ar/acerca",
-        title: "¿Qué es Bondi MDP? La app de colectivos de Mar del Plata",
+        url: "https://mdqbondi.com.ar/acerca",
+        title: "¿Qué es MDQ Bondi? La app de colectivos de Mar del Plata",
         description:
             "App gratuita para seguir el bondi en tiempo real en Mar del Plata. Conocé al equipo y cómo funciona.",
-        siteName: "Bondi MDP",
+        siteName: "MDQ Bondi",
         images: ["/opengraph-image"],
     },
     twitter: {
         card: "summary",
-        title: "¿Qué es Bondi MDP?",
+        title: "¿Qué es MDQ Bondi?",
         description:
             "La app gratuita para seguir el bondi en tiempo real en Mar del Plata.",
     },
@@ -40,13 +40,13 @@ const breadcrumbJsonLd = {
             "@type": "ListItem",
             position: 1,
             name: "Inicio",
-            item: "https://bondimdp.com.ar",
+            item: "https://mdqbondi.com.ar",
         },
         {
             "@type": "ListItem",
             position: 2,
             name: "Acerca",
-            item: "https://bondimdp.com.ar/acerca",
+            item: "https://mdqbondi.com.ar/acerca",
         },
     ],
 };

@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 import { getLineas } from "@/lib/server/loadStaticDump";
 import { lineaToSlug } from "@/lib/server/lineaSlug";
 
-export const alt = "Recorrido de colectivo en Mar del Plata — Bondi MDP";
+export const alt = "Recorrido de colectivo en Mar del Plata — MDQ Bondi";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -108,8 +108,8 @@ export default async function OpenGraphImage({
                             lineHeight: 1,
                         }}
                     >
-                        <span style={{ color: "#f0f4f8" }}>BONDI</span>
-                        <span style={{ color: "#f9cd4a"}}>MDP</span>
+                        <span style={{ color: "#f0f4f8" }}>MDQ</span>
+                        <span style={{ color: "#f9cd4a"}}>BONDI</span>
                     </div>
                 </div>
             </div>

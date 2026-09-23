@@ -18,9 +18,9 @@ export const DEV_FIXTURE_ADS: AdBoardEntry[] =
   process.env.NODE_ENV === "development"
     ? [
         {
-          id: "dev-fixture-bondimdp",
-          title: "Bondi MDP (aviso de prueba)",
-          href: "https://bondimdp.com.ar",
+          id: "dev-fixture-mdqbondi",
+          title: "MDQ Bondi (aviso de prueba)",
+          href: "https://mdqbondi.com.ar",
           tagline: "Aviso ficticio para probar el link sin imagen (favicon)",
           amountArs: 3_200,
           since: daysAgo(1),
@@ -28,7 +28,7 @@ export const DEV_FIXTURE_ADS: AdBoardEntry[] =
         {
           id: "dev-fixture-instagram",
           title: "Café de Prueba",
-          href: "https://instagram.com/bondimdp",
+          href: "https://instagram.com/mdqbondi",
           tagline: "Aviso ficticio para probar el ícono de Instagram",
           amountArs: 2_600,
           since: daysAgo(2),
@@ -36,7 +36,7 @@ export const DEV_FIXTURE_ADS: AdBoardEntry[] =
         {
           id: "dev-fixture-youtube",
           title: "Kiosco Test",
-          href: "https://youtube.com/@bondimdp",
+          href: "https://youtube.com/@mdqbondi",
           tagline: "Aviso ficticio para probar el ícono de YouTube",
           amountArs: 1_900,
           since: daysAgo(4),
@@ -44,7 +44,7 @@ export const DEV_FIXTURE_ADS: AdBoardEntry[] =
         {
           id: "dev-fixture-x",
           title: "Feria de Prueba",
-          href: "https://x.com/bondimdp",
+          href: "https://x.com/mdqbondi",
           tagline: "Aviso ficticio para probar el ícono de X",
           amountArs: 1_200,
           since: daysAgo(6),

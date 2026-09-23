@@ -81,7 +81,7 @@ async function fetchFollowingRedirects(startUrl: URL): Promise<Response | null> 
         redirect: "manual",
         headers: {
           Accept: "text/html",
-          "User-Agent": "Mozilla/5.0 (compatible; BondiMDP-OgImageBot/1.0)",
+          "User-Agent": "Mozilla/5.0 (compatible; MDQBondi-OgImageBot/1.0)",
         },
       });
     } catch {

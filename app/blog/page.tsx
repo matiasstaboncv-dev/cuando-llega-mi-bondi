@@ -9,14 +9,14 @@ import { BlogFooter } from "@features/blog/components/BlogFooter";
 // See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
 export const instant = false;
 
-const BASE_URL = "https://bondimdp.com.ar";
+const BASE_URL = "https://mdqbondi.com.ar";
 
 export const metadata: Metadata = {
     title: {
-        absolute: "Blog — Bondi MDP",
+        absolute: "Blog — MDQ Bondi",
     },
     description:
-        "Comparativas y guías sobre transporte público en Mar del Plata: Bondi MDP vs. la app oficial, y cómo saber cuándo llega el colectivo en tiempo real.",
+        "Comparativas y guías sobre transporte público en Mar del Plata: MDQ Bondi vs. la app oficial, y cómo saber cuándo llega el colectivo en tiempo real.",
     alternates: {
         canonical: "/blog",
     },
@@ -24,15 +24,15 @@ export const metadata: Metadata = {
         type: "website",
         locale: "es_AR",
         url: `${BASE_URL}/blog`,
-        title: "Blog — Bondi MDP",
+        title: "Blog — MDQ Bondi",
         description:
-            "Comparativas y guías sobre transporte público en Mar del Plata, hechas por el equipo de Bondi MDP.",
-        siteName: "Bondi MDP",
+            "Comparativas y guías sobre transporte público en Mar del Plata, hechas por el equipo de MDQ Bondi.",
+        siteName: "MDQ Bondi",
     },
     twitter: {
         card: "summary_large_image",
-        site: "@bondimdp",
-        title: "Blog — Bondi MDP",
+        site: "@mdqbondi",
+        title: "Blog — MDQ Bondi",
         description: "Comparativas y guías sobre transporte público en Mar del Plata.",
     },
 };
@@ -54,11 +54,11 @@ const breadcrumbJsonLd = {
 const blogJsonLd = {
     "@context": "https://schema.org",
     "@type": "Blog",
-    name: "Blog — Bondi MDP",
+    name: "Blog — MDQ Bondi",
     url: `${BASE_URL}/blog`,
     publisher: {
         "@type": "Organization",
-        name: "Bondi MDP",
+        name: "MDQ Bondi",
         logo: { "@type": "ImageObject", url: `${BASE_URL}/icon-512x512.png` },
     },
     blogPost: FEED_ITEMS.map((a) => ({
@@ -109,7 +109,7 @@ export default function BlogIndexPage() {
                         </span>
                     </nav>
                     <h1 className="mb-5 max-w-2xl font-display text-3xl font-extrabold leading-[1.08] tracking-tight text-foreground sm:text-5xl">
-                        Blog <span className="text-primary">Bondi MDP</span>
+                        Blog <span className="text-primary">MDQ Bondi</span>
                     </h1>
                     <p className="max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
                         Comparativas y guías sobre transporte público en Mar del Plata.

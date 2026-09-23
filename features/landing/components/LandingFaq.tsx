@@ -7,7 +7,7 @@ import { FaqAccordion } from "./FaqAccordion";
 const FAQ_ITEMS = [
   {
     q: "¿Cómo sé cuándo llega mi colectivo en Mar del Plata?",
-    a: "Entrás a Bondi MDP, elegís tu línea y tu parada en /consultar, y ves los minutos que faltan para que llegue, calculados con la posición GPS real de la unidad. Es gratis, no pide cuenta y no hace falta instalar nada.",
+    a: "Entrás a MDQ Bondi, elegís tu línea y tu parada en /consultar, y ves los minutos que faltan para que llegue, calculados con la posición GPS real de la unidad. Es gratis, no pide cuenta y no hace falta instalar nada.",
   },
   {
     q: "¿Es gratis?",
@@ -61,7 +61,7 @@ export function LandingFaq() {
           eyebrow="Preguntas frecuentes"
           title="Preguntas"
           highlight="frecuentes"
-          description="Todo lo que querés saber antes de usar Bondi MDP."
+          description="Todo lo que querés saber antes de usar MDQ Bondi."
         >
           {/* Sidebar + lista en vez de header centrado sobre acordeón: usa
               todo el ancho de la sección (como el resto de la página) sin

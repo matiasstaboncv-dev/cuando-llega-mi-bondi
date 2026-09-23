@@ -10,21 +10,21 @@ export const instant = false;
 
 export const metadata: Metadata = {
     title: {
-        absolute: "Política de privacidad | Bondi MDP",
+        absolute: "Política de privacidad | MDQ Bondi",
     },
     description:
-        "Cómo Bondi MDP trata tus datos: publicidad de Google AdSense, analítica con Google Analytics y Microsoft Clarity, cookies y tus derechos según la Ley 25.326.",
+        "Cómo MDQ Bondi trata tus datos: publicidad de Google AdSense, analítica con Google Analytics y Microsoft Clarity, cookies y tus derechos según la Ley 25.326.",
     alternates: {
         canonical: "/privacidad",
     },
     openGraph: {
         type: "website",
         locale: "es_AR",
-        url: "https://bondimdp.com.ar/privacidad",
-        title: "Política de privacidad | Bondi MDP",
+        url: "https://mdqbondi.com.ar/privacidad",
+        title: "Política de privacidad | MDQ Bondi",
         description:
-            "Cómo Bondi MDP trata tus datos, qué servicios de terceros usamos (Google AdSense, Google Analytics, Microsoft Clarity) y cuáles son tus derechos.",
-        siteName: "Bondi MDP",
+            "Cómo MDQ Bondi trata tus datos, qué servicios de terceros usamos (Google AdSense, Google Analytics, Microsoft Clarity) y cuáles son tus derechos.",
+        siteName: "MDQ Bondi",
         images: ["/opengraph-image"],
     },
     robots: {
@@ -44,13 +44,13 @@ const breadcrumbJsonLd = {
             "@type": "ListItem",
             position: 1,
             name: "Inicio",
-            item: "https://bondimdp.com.ar",
+            item: "https://mdqbondi.com.ar",
         },
         {
             "@type": "ListItem",
             position: 2,
             name: "Política de privacidad",
-            item: "https://bondimdp.com.ar/privacidad",
+            item: "https://mdqbondi.com.ar/privacidad",
         },
     ],
 };
@@ -124,7 +124,7 @@ export default function PrivacidadPage() {
                     {/* ── INTRO ───────────────────────────────────────── */}
                     <Section title="Resumen">
                         <p>
-                            Bondi MDP es una app gratuita para consultar el transporte
+                            MDQ Bondi es una app gratuita para consultar el transporte
                             público de Mar del Plata. No pedimos registro ni creamos cuentas
                             de usuario, y no vendemos tus datos personales. Para sostener el
                             proyecto y mejorarlo usamos publicidad y herramientas de
@@ -135,7 +135,7 @@ export default function PrivacidadPage() {
                     {/* ── RESPONSABLE ─────────────────────────────────── */}
                     <Section title="Responsable">
                         <p>
-                            Bondi MDP es un proyecto independiente y de código abierto,
+                            MDQ Bondi es un proyecto independiente y de código abierto,
                             mantenido por su equipo de desarrollo. Ante cualquier consulta
                             sobre esta política o sobre tus datos, podés escribirnos a través
                             de{" "}

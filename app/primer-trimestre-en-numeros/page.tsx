@@ -2,20 +2,20 @@ import { Metadata } from "next";
 import PrimerTrimestreClient from "./PrimerTrimestreClient";
 
 export const metadata: Metadata = {
-    title: "Bondi MDP: el primer trimestre en números — 22.893 usuarios activos",
+    title: "MDQ Bondi: el primer trimestre en números — 22.893 usuarios activos",
     description:
-        "Bondi MDP, la app gratuita de colectivos en tiempo real de Mar del Plata, sumó 22.893 usuarios activos y 763.000 vistas en su primer trimestre, sin pauta paga. Adopción, retención, canales de adquisición y cobertura de red, con datos completos.",
+        "MDQ Bondi, la app gratuita de colectivos en tiempo real de Mar del Plata, sumó 22.893 usuarios activos y 763.000 vistas en su primer trimestre, sin pauta paga. Adopción, retención, canales de adquisición y cobertura de red, con datos completos.",
     keywords: [
-        "Bondi MDP",
+        "MDQ Bondi",
         "app colectivos Mar del Plata",
         "transporte público Mar del Plata",
         "cuándo llega el colectivo MDP",
-        "estadísticas bondimdp",
+        "estadísticas mdqbondi",
         "informe trimestral app transporte",
     ],
-    authors: [{ name: "Bondi MDP" }],
+    authors: [{ name: "MDQ Bondi" }],
     alternates: {
-        canonical: "https://bondimdp.com.ar/primer-trimestre-en-numeros",
+        canonical: "https://mdqbondi.com.ar/primer-trimestre-en-numeros",
     },
     other: {
         "geo.region": "AR-B",
@@ -25,11 +25,11 @@ export const metadata: Metadata = {
     },
     openGraph: {
         type: "article",
-        title: "Bondi MDP: el primer trimestre en números — 22.893 usuarios activos",
+        title: "MDQ Bondi: el primer trimestre en números — 22.893 usuarios activos",
         description:
             "22.893 usuarios activos, 763.000 vistas y una curva de uso que se acelera trimestre a trimestre. Sin campañas pagas. Solo la app y el boca a boca marplatense.",
-        url: "https://bondimdp.com.ar/primer-trimestre-en-numeros",
-        siteName: "Bondi MDP",
+        url: "https://mdqbondi.com.ar/primer-trimestre-en-numeros",
+        siteName: "MDQ Bondi",
         locale: "es_AR",
         publishedTime: "2026-08-27T09:00:00-03:00",
         modifiedTime: "2026-08-27T09:00:00-03:00",
@@ -38,8 +38,8 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        site: "@bondimdp",
-        title: "Bondi MDP: el primer trimestre en números — 22.893 usuarios activos",
+        site: "@mdqbondi",
+        title: "MDQ Bondi: el primer trimestre en números — 22.893 usuarios activos",
         description:
             "22.893 usuarios activos, 763.000 vistas, 5,6 días-usuario recurrentes por cada nuevo. Un trimestre de datos de la app de colectivos en tiempo real de Mar del Plata.",
     },
@@ -52,7 +52,7 @@ export const instant = false;
 const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "Bondi MDP: el primer trimestre en números — 22.893 usuarios activos",
+    headline: "MDQ Bondi: el primer trimestre en números — 22.893 usuarios activos",
     description:
         "22.893 usuarios activos, 763.000 vistas y una curva de uso que se acelera trimestre a trimestre para la app de colectivos en tiempo real de Mar del Plata.",
     datePublished: "2026-08-27T09:00:00-03:00",
@@ -63,15 +63,15 @@ const articleJsonLd = {
     ],
     publisher: {
         "@type": "Organization",
-        name: "Bondi MDP",
+        name: "MDQ Bondi",
         logo: {
             "@type": "ImageObject",
-            url: "https://bondimdp.com.ar/icon-512x512.png",
+            url: "https://mdqbondi.com.ar/icon-512x512.png",
         },
     },
     mainEntityOfPage: {
         "@type": "WebPage",
-        "@id": "https://bondimdp.com.ar/primer-trimestre-en-numeros",
+        "@id": "https://mdqbondi.com.ar/primer-trimestre-en-numeros",
     },
 };
 

@@ -6,7 +6,7 @@ import { ARTICLES, getArticle } from "@features/blog/data/articles";
 // cached" incluso con la ruta prerenderizada, confirmado con el server
 // standalone real, no solo `next start`. Se vuelve a `alt` estático genérico
 // hasta que ese bug de Next se resuelva.
-export const alt = "Blog — Bondi MDP";
+export const alt = "Blog — MDQ Bondi";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -21,7 +21,7 @@ export default async function OpenGraphImage({
 }) {
     const { slug } = await params;
     const article = getArticle(slug);
-    const title = article?.title ?? "Blog — Bondi MDP";
+    const title = article?.title ?? "Blog — MDQ Bondi";
     const section = article?.section ?? "Blog";
 
     const interBlackItalicData = await fetch(
@@ -94,8 +94,8 @@ export default async function OpenGraphImage({
                         lineHeight: 1,
                     }}
                 >
-                    <span style={{ color: "#f0f4f8" }}>BONDI</span>
-                    <span style={{ color: "#f9cd4a" }}>MDP</span>
+                    <span style={{ color: "#f0f4f8" }}>MDQ</span>
+                    <span style={{ color: "#f9cd4a" }}>BONDI</span>
                 </div>
             </div>
         ),

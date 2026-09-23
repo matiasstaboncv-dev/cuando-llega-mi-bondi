@@ -134,8 +134,8 @@ export default function PrimerTrimestreClient() {
             <nav className="sticky top-0 z-[100] bg-background/88 backdrop-blur-md border-b border-border px-6">
                 <div className="max-w-[880px] mx-auto h-[58px] flex items-center justify-between">
                     <Link href="/" className="font-bold italic text-lg tracking-tight select-none">
-                        <span className="text-foreground">BONDI</span>
-                        <span className="text-primary">MDP</span>
+                        <span className="text-foreground">MDQ</span>
+                        <span className="text-primary">BONDI</span>
                     </Link>
                     <div className="flex items-center gap-6">
                         <Link href="/blog" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
@@ -176,13 +176,13 @@ export default function PrimerTrimestreClient() {
                         <span>7 min de lectura</span>
                     </div>
                     <h1 className="font-display font-extrabold text-3xl sm:text-5xl text-foreground leading-[1.08] tracking-tight mb-5 max-w-2xl">
-                        Bondi MDP: el primer trimestre en números —
+                        MDQ Bondi: el primer trimestre en números —
                         <br />
                         <span className="text-primary">de un mes de arranque a un hábito diario</span>
                     </h1>
                     <p className="text-base sm:text-lg text-muted-foreground max-w-2xl leading-relaxed">
                         <strong className="font-semibold">
-                            Del 26 de mayo al 23 de agosto de 2026, Bondi MDP acumuló su primer trimestre completo de
+                            Del 26 de mayo al 23 de agosto de 2026, MDQ Bondi acumuló su primer trimestre completo de
                             datos.
                         </strong>{" "}
                         Van tres meses desde el{" "}
@@ -237,7 +237,7 @@ export default function PrimerTrimestreClient() {
                         </h2>
                         <div className="text-sm sm:text-base text-muted-foreground space-y-4 leading-relaxed max-w-[660px]">
                             <p>
-                                Bondi MDP la siguen haciendo Nicolás Jiménez y Matias Celiz Ramos, sin inversión externa
+                                MDQ Bondi la siguen haciendo Nicolás Jiménez y Matias Celiz Ramos, sin inversión externa
                                 ni pauta paga, consumiendo la misma API en tiempo real de la Municipalidad de General
                                 Pueyrredón que usa la app oficial &ldquo;Cuándo Llega&rdquo;. Este informe cubre el
                                 período 26 de mayo – 23 de agosto de 2026: el primer trimestre completo con datos de
@@ -486,18 +486,18 @@ export default function PrimerTrimestreClient() {
                         <h2 id="faq-h2" className="font-display font-bold text-2xl sm:text-3xl text-foreground mb-6 leading-tight">
                             Lo que la gente pregunta sobre
                             <br />
-                            <span className="text-primary">el primer trimestre de Bondi MDP</span>
+                            <span className="text-primary">el primer trimestre de MDQ Bondi</span>
                         </h2>
 
                         <div className="divide-y divide-white/10 border-y border-border mt-6" itemScope itemType="https://schema.org/FAQPage">
                             <details className="group py-4.5 cursor-pointer" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
                                 <summary className="flex justify-between items-center text-sm sm:text-base font-semibold text-foreground list-none outline-none group-open:text-primary transition-colors" itemProp="name">
-                                    ¿Cuántos usuarios tiene Bondi MDP en su primer trimestre?
+                                    ¿Cuántos usuarios tiene MDQ Bondi en su primer trimestre?
                                     <span className="text-lg text-primary font-light transition-transform duration-200 group-open:rotate-45 flex-shrink-0 ml-4">+</span>
                                 </summary>
                                 <div className="mt-3 text-xs sm:text-sm text-muted-foreground leading-relaxed max-w-[720px]" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
                                     <p itemProp="text">
-                                        Entre el 26 de mayo y el 23 de agosto de 2026, Bondi MDP registró 22.893 usuarios
+                                        Entre el 26 de mayo y el 23 de agosto de 2026, MDQ Bondi registró 22.893 usuarios
                                         activos, 133.694 sesiones y 762.918 vistas de página, según Google Analytics 4.
                                         El 58% de esos usuarios llegó en el último mes del período.
                                     </p>
@@ -506,7 +506,7 @@ export default function PrimerTrimestreClient() {
 
                             <details className="group py-4.5 cursor-pointer" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
                                 <summary className="flex justify-between items-center text-sm sm:text-base font-semibold text-foreground list-none outline-none group-open:text-primary transition-colors" itemProp="name">
-                                    ¿Cómo consigue usuarios Bondi MDP?
+                                    ¿Cómo consigue usuarios MDQ Bondi?
                                     <span className="text-lg text-primary font-light transition-transform duration-200 group-open:rotate-45 flex-shrink-0 ml-4">+</span>
                                 </summary>
                                 <div className="mt-3 text-xs sm:text-sm text-muted-foreground leading-relaxed max-w-[720px]" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
@@ -520,7 +520,7 @@ export default function PrimerTrimestreClient() {
 
                             <details className="group py-4.5 cursor-pointer" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
                                 <summary className="flex justify-between items-center text-sm sm:text-base font-semibold text-foreground list-none outline-none group-open:text-primary transition-colors" itemProp="name">
-                                    ¿La gente vuelve a usar Bondi MDP o la prueba una sola vez?
+                                    ¿La gente vuelve a usar MDQ Bondi o la prueba una sola vez?
                                     <span className="text-lg text-primary font-light transition-transform duration-200 group-open:rotate-45 flex-shrink-0 ml-4">+</span>
                                 </summary>
                                 <div className="mt-3 text-xs sm:text-sm text-muted-foreground leading-relaxed max-w-[720px]" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
@@ -534,7 +534,7 @@ export default function PrimerTrimestreClient() {
 
                             <details className="group py-4.5 cursor-pointer" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
                                 <summary className="flex justify-between items-center text-sm sm:text-base font-semibold text-foreground list-none outline-none group-open:text-primary transition-colors" itemProp="name">
-                                    ¿Bondi MDP solo se usa en Mar del Plata?
+                                    ¿MDQ Bondi solo se usa en Mar del Plata?
                                     <span className="text-lg text-primary font-light transition-transform duration-200 group-open:rotate-45 flex-shrink-0 ml-4">+</span>
                                 </summary>
                                 <div className="mt-3 text-xs sm:text-sm text-muted-foreground leading-relaxed max-w-[720px]" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
@@ -584,8 +584,8 @@ export default function PrimerTrimestreClient() {
             <footer className="bg-muted py-10 px-6">
                 <div className="max-w-[880px] mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
                     <Link href="/" className="font-bold italic text-lg tracking-tight select-none">
-                        <span className="text-foreground">BONDI</span>
-                        <span className="text-primary">MDP</span>
+                        <span className="text-foreground">MDQ</span>
+                        <span className="text-primary">BONDI</span>
                     </Link>
                     <p className="text-xs text-muted-foreground">App gratuita de colectivos para Mar del Plata.</p>
                     <p className="text-[10px] text-[#3D5568] text-center md:text-right">
