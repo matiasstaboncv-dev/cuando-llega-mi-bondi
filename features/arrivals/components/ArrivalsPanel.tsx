@@ -18,9 +18,6 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import { ArrivalsEmpty } from "./ArrivalsEmpty";
 import { ArrivalsLoading } from "./ArrivalsLoading";
 import { LiveSharingBanner } from "./LiveSharingBanner";
-import { AdSenseRail } from "@shared/ads/AdSenseUnit";
-
-const ADSENSE_SLOT_ARRIVALS = process.env.NEXT_PUBLIC_ADSENSE_SLOT_ARRIVALS?.trim();
 
 interface ArrivalsPanelProps {
     consult: Pick<
@@ -254,10 +251,6 @@ export function ArrivalsPanel({ consult, arrivals }: ArrivalsPanelProps) {
                     />
                 </div>
             ) : null}
-
-            {/* Montado mientras consultás: NO gates con loadingArribos (el refresh
-                cada 25s desmontaba el bloque y AdSense parpadeaba / quedaba unfilled). */}
-            {isConsulting ? <AdSenseRail slot={ADSENSE_SLOT_ARRIVALS} /> : null}
         </div>
     );
 }
