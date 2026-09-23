@@ -67,11 +67,13 @@ export function createBusSpriteIcon(bearing: number): L.DivIcon {
 
     return L.divIcon({
         className: "bondi-sprite",
-        // Dos capas: el dibujo ocupa la celda entera y no recibe eventos, y un
-        // recuadro más chico en el centro es el que los captura. Ambos van
+        // Tres capas: el radar gira detrás (no recibe eventos, no se mueve al
+        // hover), el dibujo ocupa la celda entera y no recibe eventos, y un
+        // recuadro más chico en el centro es el que los captura. Todas van
         // adentro y no en la raíz, porque a la raíz la posiciona Leaflet con su
         // propio `transform` y pisarlo la despegaría de sus coordenadas.
         html:
+            `<div class="bondi-sprite-radar"></div>` +
             `<div class="bondi-sprite-img" style="` +
             `width:${CELDA_PX}px;height:${CELDA_PX}px;` +
             `background-image:url('${SPRITE.url}');` +

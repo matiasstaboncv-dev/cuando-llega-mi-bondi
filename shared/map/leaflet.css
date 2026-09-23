@@ -40,12 +40,50 @@
     }
 }
 
+@keyframes radar-sweep {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 /* La raíz no recibe eventos: los recibe sólo `.bondi-sprite-hit`, que es más
    chico que la celda. El evento igual burbujea hasta la raíz, así que los
    handlers de Leaflet (popup, click) siguen funcionando, y el `:hover` también
    se aplica a la raíz porque el target es un descendiente suyo. */
 .bondi-sprite {
     pointer-events: none;
+}
+
+/*
+ * Radar propio de MDQ Bondi bajo cada bondi en vivo: un barrido cónico que
+ * gira (no el típico anillo que crece y se desvanece, ya usado en
+ * `.marker-stop` y en el resto de la app para "esto es un punto GPS"). Acá el
+ * marcador YA ES el vehículo real siguiendo su rumbo, así que la idea es
+ * "lo estamos rastreando" — un barrido de radar, no un pulso genérico.
+ */
+.bondi-sprite-radar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 58px;
+    height: 58px;
+    margin-left: -29px;
+    margin-top: -29px;
+    border-radius: 50%;
+    pointer-events: none;
+    /* Cola de barrido más larga (~110°) para que quede algo visible incluso
+       en una captura estática, sin dejar de leerse como "girando" en vivo. */
+    background: conic-gradient(
+        from 0deg,
+        transparent 0deg,
+        transparent 250deg,
+        rgba(249, 205, 74, 0.16) 300deg,
+        rgba(249, 205, 74, 0.75) 350deg,
+        rgba(249, 205, 74, 0.95) 360deg
+    );
+    -webkit-mask: radial-gradient(circle, transparent 68%, #000 70%, #000 100%);
+    mask: radial-gradient(circle, transparent 68%, #000 70%, #000 100%);
+    animation: radar-sweep 3.2s linear infinite;
 }
 
 .bondi-sprite-img {
@@ -115,5 +153,10 @@
 
     .bondi-sprite:hover .bondi-sprite-img {
         transform: none;
+    }
+
+    .bondi-sprite-radar {
+        animation: none;
+        opacity: 0;
     }
 }
