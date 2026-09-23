@@ -13,6 +13,10 @@ export function ArriboCard({
 }) {
   const color = getArriboColor(arribo.Arribo);
   const isAdaptado = arribo.EsAdaptado === "True";
+  // "Arribando"/"Llegando": el momento en que más importa transmitir "en
+  // vivo" — mismo lenguaje de pulso que el marcador GPS del fondo/hero, no
+  // una animación nueva.
+  const isArriving = color === "#22c55e";
 
   const arriboColorClass =
     color === "#22c55e"
@@ -34,10 +38,16 @@ export function ArriboCard({
           </div>
           <div
             className={cn(
-              "mt-1 font-mono text-[22px] font-extrabold leading-[1.1] tracking-[-0.5px]",
+              "mt-1 flex items-center gap-2 font-mono text-[22px] font-extrabold leading-[1.1] tracking-[-0.5px]",
               arriboColorClass,
             )}
           >
+            {isArriving && (
+              <span className="relative flex h-2.5 w-2.5 shrink-0" aria-hidden>
+                <span className="absolute inset-0 animate-route-pulse rounded-full bg-success" />
+                <span className="absolute inset-0 m-auto h-1.5 w-1.5 rounded-full bg-success" />
+              </span>
+            )}
             {arribo.Arribo}
           </div>
         </div>
