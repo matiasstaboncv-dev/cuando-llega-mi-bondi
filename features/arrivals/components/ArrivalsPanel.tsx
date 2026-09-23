@@ -158,7 +158,16 @@ export function ArrivalsPanel({ consult, arrivals }: ArrivalsPanelProps) {
     return (
         <div className="mt-3">
             <div className="mb-2.5 flex items-center justify-between">
-                <label className="font-mono text-[10px] tracking-[1.4px] text-muted-foreground">
+                <label className="flex items-center gap-1.5 font-mono text-[10px] tracking-[1.4px] text-muted-foreground">
+                    {/* Punto "en vivo" distinto del pulso ámbar de ArriboCard
+                        (ese avisa "está por llegar"; este dice "esta lista se
+                        actualiza sola") — mismo par que el badge del hero. */}
+                    {isConsulting && !isStale && (
+                        <span
+                            className="h-1.5 w-1.5 shrink-0 animate-pulse rounded-full bg-secondary"
+                            aria-hidden
+                        />
+                    )}
                     PRÓXIMOS ARRIBOS
                 </label>
                 <div className="flex items-center gap-2">
