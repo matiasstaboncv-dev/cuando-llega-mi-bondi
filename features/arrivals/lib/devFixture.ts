@@ -25,12 +25,20 @@ function makeArribo(overrides: Partial<Arribo> & Pick<Arribo, "Arribo">): Arribo
  * Arribos ficticios para probar visualmente ArriboCard (colores por
  * urgencia, badge adaptado, mensaje de error) sin depender de que la
  * Municipalidad esté sirviendo datos en ese momento (ej. fuera de horario).
- * Sólo existen con `next dev`; en producción NODE_ENV es "production" y
- * queda en un array vacío. Ver `useArribos.ts`, que los usa como fallback
- * cuando la consulta real no trae arribos.
+ * Ver `useArribos.ts`, que los usa como fallback cuando la consulta real no
+ * trae arribos.
+ *
+ * Gotcha real que costó una sesión de debugging: con solo `NODE_ENV ===
+ * "development"` como condición, esto se activaba SIEMPRE en `next dev`
+ * ante cualquier "sin datos disponibles" real — sin ningún indicio visual
+ * de que era ficticio. Un usuario probando una línea sin bondis circulando
+ * en ese momento veía "AL SHOPPING ALDREY / A CENTRO / A PLAYA GRANDE" para
+ * CUALQUIER línea, indistinguible de datos reales mal atribuidos. Ahora
+ * hace falta habilitarlo a mano.
  */
 export const DEV_FIXTURE_ARRIBOS: Arribo[] =
-    process.env.NODE_ENV === "development"
+    process.env.NODE_ENV === "development" &&
+    process.env.NEXT_PUBLIC_DEV_FIXTURE_ARRIBOS === "true"
         ? [
               makeArribo({ Arribo: "Arribando..", CodigoLineaParada: "512-a", EsAdaptado: "True" }),
               makeArribo({

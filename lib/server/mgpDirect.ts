@@ -166,7 +166,7 @@ function looksUnauthenticated(text: string, status?: number): boolean {
     }
 }
 
-export async function fetchMgpDirect(body: string): Promise<unknown> {
+async function fetchMgpDirectOnce(body: string): Promise<unknown> {
     let s = await getSession();
     let { status, text } = await callAppWS(s, body);
 
@@ -188,4 +188,29 @@ export async function fetchMgpDirect(body: string): Promise<unknown> {
     } catch {
         throw new Error("appWS.php devolvió respuesta no JSON");
     }
+}
+
+/**
+ * Cola FIFO: todas las llamadas comparten un único PHPSESSID (una app real
+ * tiene una sesión por dispositivo; acá una sesión atiende a todos nuestros
+ * usuarios). appWS.php no es thread-safe para una misma sesión — bajo
+ * concurrencia real se vio devolver "Collection was modified; enumeration
+ * operation may not execute." (bug de concurrencia del lado de la
+ * Municipalidad) y, peor, arribos de una línea distinta a la pedida (ver
+ * línea 552 devolviendo destinos de la 501). Serializar acá evita mandarle
+ * dos requests concurrentes por la misma sesión — el costo es latencia
+ * (las consultas hacen cola), no incorrección.
+ */
+let tail: Promise<void> = Promise.resolve();
+
+export function fetchMgpDirect(body: string): Promise<unknown> {
+    const run = tail.then(
+        () => fetchMgpDirectOnce(body),
+        () => fetchMgpDirectOnce(body),
+    );
+    tail = run.then(
+        () => undefined,
+        () => undefined,
+    );
+    return run;
 }
