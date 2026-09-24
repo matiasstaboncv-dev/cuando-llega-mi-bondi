@@ -8,6 +8,7 @@ import { IconAlertTriangle } from "@shared/icons/IconAlertTriangle";
 import { IconInfo } from "@shared/icons/IconInfo";
 import { cn } from "@shared/utils";
 import type { MgpErrorPresentation } from "@shared/api/errors";
+import { formatElapsedLong } from "@features/arrivals/utils";
 
 export type ArrivalsEmptyMode = "prompt" | "no-data";
 
@@ -27,6 +28,8 @@ interface ArrivalsEmptyProps {
     selectedRamal: string;
     onRetry: () => void;
     onResetRamal: () => void;
+    /** `Date.now()` del último arribo real visto acá, o `null` si nunca. */
+    lastKnownGoodAt: number | null;
 }
 
 /** Cuenta regresiva legible en segundos hasta `retryAt`, o `null` si ya pasó / no hay. */
@@ -51,6 +54,7 @@ export function ArrivalsEmpty({
     selectedRamal,
     onRetry,
     onResetRamal,
+    lastKnownGoodAt,
 }: ArrivalsEmptyProps) {
     const countdown = useCountdown(retryAt);
 
@@ -109,6 +113,17 @@ export function ArrivalsEmpty({
                     ) : null}
                 </div>
             )}
+
+            {/* Diagnóstico: distingue "esta parada/línea nunca tuvo datos en
+                este dispositivo" de "hace poco sí había, ahora no" — sin esto,
+                "sin datos" se lee igual en los dos casos, y solo el segundo
+                sugiere que puede ser un problema pasajero del lado de la
+                Municipalidad en vez de que simplemente no haya bondi cerca. */}
+            <div className="mb-3.5 font-mono text-[11px] text-muted-foreground">
+                {lastKnownGoodAt === null
+                    ? "No hay registro de un bondi real acá en este dispositivo (últimas 24 h)."
+                    : `Último bondi real visto acá: ${formatElapsedLong(Date.now() - lastKnownGoodAt)}.`}
+            </div>
 
             <div className="flex flex-col items-stretch gap-2.5">
                 <Button

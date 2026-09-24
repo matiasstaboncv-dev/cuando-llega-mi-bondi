@@ -61,7 +61,7 @@ function MainLayoutContent({ children }: { children: ReactNode }) {
   const setIsConsulting = useSearchFlowStore((s) => s.setIsConsulting);
   const applySelection = useSearchFlowStore((s) => s.applySelection);
 
-  const { arribos, loadingArribos, mutateArribos, lastUpdate, errorInfo, retryAt, isStale } = useArribos({
+  const { arribos, loadingArribos, mutateArribos, lastUpdate, errorInfo, retryAt, isStale, lastKnownGoodAt } = useArribos({
     isConsulting,
     paradaId,
     codLinea,
@@ -186,6 +186,7 @@ function MainLayoutContent({ children }: { children: ReactNode }) {
         errorInfo,
         retryAt,
         isStale,
+        lastKnownGoodAt,
       },
       telegramUsername:
         process.env.NEXT_PUBLIC_TELEGRAM_BOT_USERNAME || "cuandollegamdp_bot",
@@ -214,6 +215,7 @@ function MainLayoutContent({ children }: { children: ReactNode }) {
       errorInfo,
       retryAt,
       isStale,
+      lastKnownGoodAt,
     ],
   );
 

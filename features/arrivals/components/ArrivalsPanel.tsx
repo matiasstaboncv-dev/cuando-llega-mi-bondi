@@ -72,6 +72,7 @@ export function ArrivalsPanel({ consult, arrivals }: ArrivalsPanelProps) {
         errorInfo,
         retryAt,
         isStale: isStaleFromProxy,
+        lastKnownGoodAt,
     } = arrivals;
 
     const { favoritos, removeFavorito } = useFavoritos();
@@ -231,6 +232,7 @@ export function ArrivalsPanel({ consult, arrivals }: ArrivalsPanelProps) {
                     selectedRamal={selectedRamal}
                     onRetry={fetchArribos}
                     onResetRamal={() => setSelectedRamal("TODOS")}
+                    lastKnownGoodAt={lastKnownGoodAt}
                 />
             ) : (
                 <div className="flex flex-col gap-3">

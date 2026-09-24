@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import useSWR, { type SWRConfiguration } from "swr";
 import type { Arribo } from "@features/arrivals/types";
 import { DEV_FIXTURE_ARRIBOS } from "@features/arrivals/lib/devFixture";
+import { getLastGoodArrivalAt, markGoodArrivalNow } from "@features/arrivals/lib/lastGoodArrival";
 import { swrFetcherWithMeta, type MgpResult, type SwrActionKey } from "@shared/api/client";
 import {
     MgpBusinessError,
@@ -32,6 +33,14 @@ export function useArribos({
     const [lastUpdate, setLastUpdate] = useState<Date | null>(null);
     const [errorInfo, setErrorInfo] = useState<MgpErrorPresentation | null>(null);
     const [retryAt, setRetryAt] = useState<number | null>(null);
+    // Diagnóstico para "sin datos": a diferencia de lastUpdate (se resetea al
+    // cambiar de parada/línea, y no distingue error de éxito vacío), esto
+    // sobrevive el cambio de consulta y el reload — persiste en localStorage
+    // por parada+línea. Null real ("nunca vimos un bondi acá") vs. un
+    // timestamp viejo ("hace 3 h") cuentan historias distintas.
+    const [lastKnownGoodAt, setLastKnownGoodAt] = useState<number | null>(() =>
+        paradaId && codLinea ? getLastGoodArrivalAt(codLinea, paradaId) : null,
+    );
     const onSuccessRef = useRef(onSuccess);
     const onErrorRef = useRef(onError);
     useEffect(() => {
@@ -52,6 +61,7 @@ export function useArribos({
         setErrorInfo(null);
         setRetryAt(null);
         setLastUpdate(null);
+        setLastKnownGoodAt(paradaId && codLinea ? getLastGoodArrivalAt(codLinea, paradaId) : null);
     }
 
     const swrOptions: SWRConfiguration<ArribosResult> = useMemo(
@@ -66,10 +76,16 @@ export function useArribos({
             // previos `isLoading` queda en false. Para lo que buscaba (que un
             // refresh fallido no vacíe la lista) no hace falta: SWR ya conserva
             // los datos de una key cuando su revalidación falla.
-            onSuccess: () => {
+            onSuccess: (result) => {
                 setLastUpdate(new Date());
                 setErrorInfo(null);
                 setRetryAt(null);
+                const gotArribos = ((result?.data?.arribos as Arribo[] | undefined) ?? []).length > 0;
+                if (gotArribos && paradaId && codLinea) {
+                    const now = Date.now();
+                    markGoodArrivalNow(codLinea, paradaId);
+                    setLastKnownGoodAt(now);
+                }
                 onSuccessRef.current?.();
             },
             onError: (err) => {
@@ -125,5 +141,6 @@ export function useArribos({
         errorInfo,
         retryAt,
         isStale: data?.meta?.cache === "STALE",
+        lastKnownGoodAt,
     };
 }

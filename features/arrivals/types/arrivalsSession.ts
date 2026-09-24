@@ -68,6 +68,12 @@ export type ArrivalsDataSession = {
     retryAt: number | null;
     /** `true` cuando el proxy marcó la última respuesta como `X-Cache: STALE`. */
     isStale: boolean;
+    /**
+     * `Date.now()` de la última vez que esta parada+línea trajo un arribo
+     * real (no un "sin datos"), persistido en localStorage. `null` si nunca
+     * se vio uno en este dispositivo. Ver `lib/lastGoodArrival.ts`.
+     */
+    lastKnownGoodAt: number | null;
 };
 
 export type ArrivalsOverlaySession = {

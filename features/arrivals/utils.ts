@@ -1,5 +1,22 @@
 import type { Arribo } from "./types";
 
+/**
+ * Tiempo transcurrido legible, desde segundos hasta días. Distinto del
+ * `formatRelative` de ArrivalsPanel.tsx (ese es para "hace Xs" de la última
+ * consulta, siempre reciente); este es para "hace cuánto vimos un bondi de
+ * verdad acá", que puede ser de hace horas o días.
+ */
+export function formatElapsedLong(ms: number): string {
+    const s = Math.max(0, Math.round(ms / 1000));
+    if (s < 60) return "recién";
+    const m = Math.round(s / 60);
+    if (m < 60) return `hace ${m} min`;
+    const h = Math.round(m / 60);
+    if (h < 24) return `hace ${h} h`;
+    const d = Math.round(h / 24);
+    return `hace ${d} día${d === 1 ? "" : "s"}`;
+}
+
 export function arriboLineaDescripcion(a: Arribo): string {
     return (a.DescripcionLinea ?? a.descripcionLinea ?? "").trim();
 }
